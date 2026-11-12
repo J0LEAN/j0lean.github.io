@@ -279,3 +279,4 @@ footer .legal { grid-column: 1 / -1; margin-top: 12px; padding-top: 20px; border
 @media (max-width: 860px) { .lang-menu { margin-left: auto; } .top .lang-menu + .btn { margin-left: 8px; } }
 @media (max-width: 420px) { .lang-menu summary span { display: none; } }
 #cm-signed-out .btn { display: flex; width: fit-content; margin-top: 18px; }
+.price li strong { color: var(--text); }
