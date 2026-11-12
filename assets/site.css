@@ -176,6 +176,7 @@ h1, h2, h3 { overflow-wrap: break-word; }
 /* prices */
 .price { display: flex; flex-direction: column; }
 .price .amount { font: 900 clamp(30px, 4vw, 40px)/1.1 var(--display); margin: 14px 0 4px; }
+.price .amount .per { font-size: 0.45em; font-weight: 700; color: var(--soft); margin-left: 4px; }
 .price ul { margin: 18px 0 0; padding: 0; list-style: none; display: grid; gap: 10px; }
 .price li { display: flex; gap: 10px; color: var(--soft); }
 .price li svg { width: 20px; height: 20px; flex: none; margin-top: 3px; color: var(--c2, var(--lilac)); }
