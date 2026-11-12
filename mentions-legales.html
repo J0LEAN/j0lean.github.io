@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mentions légales · Pépouze</title>
+<meta name="description" content="Éditeur, hébergeur et informations légales du site et de l&#x27;application Pépouze.">
+<link rel="canonical" href="https://j0lean.github.io/mentions-legales.html">
+<meta name="theme-color" content="#050508">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:site_name" content="Pépouze">
+<meta property="og:title" content="Mentions légales · Pépouze">
+<meta property="og:description" content="Éditeur, hébergeur et informations légales du site et de l&#x27;application Pépouze.">
+<meta property="og:url" content="https://j0lean.github.io/mentions-legales.html">
+<meta property="og:image" content="https://j0lean.github.io/assets/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="192x192" href="assets/icon-192.png">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+<link rel="preload" href="assets/fonts/jakarta.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/archivo-expanded-black.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="assets/site.css?v=018c42f9">
+<script>document.documentElement.classList.add('js')</script>
+</head>
+<body>
+<a class="skip" href="#contenu">Aller au contenu</a>
+<div class="sky" aria-hidden="true"></div>
+
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="./" aria-label="Pépouze, accueil"><img src="assets/icon-192.png" alt="" width="36" height="36">Pépouze</a>
+    <nav class="nav" aria-label="Sections">
+      <a href="./#fonctionnement">Comment ça marche</a>
+      <a href="./#exemples">Exemples</a>
+      <a href="./#nova">Pépouze</a>
+      <a href="./#tarifs">Tarifs</a>
+      <a href="./#questions">Questions</a>
+    </nav>
+    <span class="btn btn-small btn-soon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v11m-5-5 5 5 5-5M5 19h14"/></svg><span class="long">Bientôt sur </span>Google Play</span>
+  </div>
+</header>
+
+<main id="contenu">
+<section class="doc">
+  <div class="wrap">
+    <p class="eyebrow">Légal</p>
+    <h1>Mentions légales</h1>
+
+    <h2>Éditeur du site et de l'application</h2>
+    <p>Pépouze, éditeur particulier<br>Éditeur non professionnel : identité et adresse communiquées à l&#x27;hébergeur (art. 6, III, 2 de la loi n° 2004-575 du 21 juin 2004)<br>Contact : <a href="mailto:pepouze.apk@gmail.com">pepouze.apk@gmail.com</a></p>
+    <p>Directeur de la publication : Pépouze, éditeur particulier</p>
+
+    <h2>Hébergement</h2>
+    <p>GitHub, Inc., 88 Colin P. Kelly Jr. Street, San Francisco, CA 94107, États-Unis (GitHub Pages)</p>
+
+    <h2>Propriété intellectuelle</h2>
+    <p>Le nom, le logo, les textes, les images et les captures d'écran de Pépouze sont protégés : leur reproduction sans autorisation est interdite. Google Play et Android sont des marques de Google LLC.</p>
+
+    <h2>Données personnelles</h2>
+    <p>Ce site n'utilise ni cookie, ni mesure d'audience, ni contenu chargé depuis un autre site. Comme tout hébergeur, le nôtre peut conserver des journaux techniques (dont l'adresse IP des visiteurs) pour la sécurité du service.</p>
+    <p>Pour l'application, lisez la <a href="confidentialite.html">politique de confidentialité</a>. Pour supprimer votre compte, suivez <a href="suppression-compte.html">la page de suppression du compte</a>.</p>
+  </div>
+</section>
+<script>
+// gentle entrances as sections scroll into view; everything shows at once without this or with reduced motion
+(() => {
+  const els = document.querySelectorAll('.reveal');
+  if (!('IntersectionObserver' in window) || matchMedia('(prefers-reduced-motion: reduce)').matches) { els.forEach((e) => e.classList.add('in')); return; }
+  const io = new IntersectionObserver((list) => { for (const e of list) if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } }, { rootMargin: '0px 0px -6% 0px', threshold: 0.06 });
+  els.forEach((e) => io.observe(e));
+})();
+</script>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="about">
+      <a class="brand" href="./"><img src="assets/icon-192.png" alt="" width="36" height="36">Pépouze</a>
+      <p>Automatisez votre téléphone avec des règles simples : « Quand… Faire… ».</p>
+    </div>
+    <div>
+      <h2>L'appli</h2>
+      <ul>
+        <li><a href="./#fonctionnement">Comment ça marche</a></li>
+        <li><a href="./#exemples">Exemples</a></li>
+        <li><a href="./#tarifs">Gratuit ou Premium</a></li>
+        <li><a href="./#questions">Questions</a></li>
+      </ul>
+    </div>
+    <div>
+      <h2>Vos données</h2>
+      <ul>
+        <li><a href="confidentialite.html">Politique de confidentialité</a></li>
+        <li><a href="suppression-compte.html">Supprimer mon compte</a></li>
+        <li><a href="mentions-legales.html">Mentions légales</a></li>
+      </ul>
+    </div>
+    <div>
+      <h2>Contact</h2>
+      <ul>
+        <li><a href="mailto:pepouze.apk@gmail.com">pepouze.apk@gmail.com</a></li>
+      </ul>
+    </div>
+    <p class="legal">© 2026 Pépouze. Google Play est une marque de Google LLC. Ce site n'utilise ni cookie ni mesure d'audience.</p>
+  </div>
+</footer>
+</body>
+</html>
