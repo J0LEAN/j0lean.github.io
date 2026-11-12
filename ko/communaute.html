@@ -1,0 +1,312 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>커뮤니티 · Pépouze</title>
+<meta name="description" content="Pépouze 사용자들이 공유한 매크로. 코드를 복사해 앱에 붙여 넣거나, 내 매크로를 올려 보세요.">
+<link rel="canonical" href="https://j0lean.github.io/ko/communaute.html">
+<meta name="theme-color" content="#050508">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="ko_KR">
+<link rel="alternate" hreflang="fr" href="https://j0lean.github.io/communaute.html">
+<link rel="alternate" hreflang="de" href="https://j0lean.github.io/de/communaute.html">
+<link rel="alternate" hreflang="en" href="https://j0lean.github.io/en/communaute.html">
+<link rel="alternate" hreflang="es" href="https://j0lean.github.io/es/communaute.html">
+<link rel="alternate" hreflang="id" href="https://j0lean.github.io/id/communaute.html">
+<link rel="alternate" hreflang="it" href="https://j0lean.github.io/it/communaute.html">
+<link rel="alternate" hreflang="ja" href="https://j0lean.github.io/ja/communaute.html">
+<link rel="alternate" hreflang="ko" href="https://j0lean.github.io/ko/communaute.html">
+<link rel="alternate" hreflang="nl" href="https://j0lean.github.io/nl/communaute.html">
+<link rel="alternate" hreflang="pl" href="https://j0lean.github.io/pl/communaute.html">
+<link rel="alternate" hreflang="pt-BR" href="https://j0lean.github.io/pt/communaute.html">
+<link rel="alternate" hreflang="tr" href="https://j0lean.github.io/tr/communaute.html">
+<link rel="alternate" hreflang="zh-Hans" href="https://j0lean.github.io/zh/communaute.html">
+<link rel="alternate" hreflang="x-default" href="https://j0lean.github.io/en/communaute.html">
+<meta property="og:site_name" content="Pépouze">
+<meta property="og:title" content="커뮤니티 · Pépouze">
+<meta property="og:description" content="Pépouze 사용자들이 공유한 매크로. 코드를 복사해 앱에 붙여 넣거나, 내 매크로를 올려 보세요.">
+<meta property="og:url" content="https://j0lean.github.io/ko/communaute.html">
+<meta property="og:image" content="https://j0lean.github.io/assets/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="../favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="192x192" href="../assets/icon-192.png">
+<link rel="apple-touch-icon" href="../assets/apple-touch-icon.png">
+<link rel="preload" href="../assets/fonts/jakarta.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="../assets/fonts/archivo-expanded-black.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="../assets/site.css?v=4ec222e2">
+<script>document.documentElement.classList.add('js')</script>
+</head>
+<body>
+<a class="skip" href="#contenu">본문으로 건너뛰기</a>
+<div class="sky" aria-hidden="true"></div>
+
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="./" aria-label="Pépouze, 홈"><img src="../assets/icon-192.png" alt="" width="36" height="36">Pépouze</a>
+    <nav class="nav" aria-label="섹션">
+      <a href="./#fonctionnement">사용 방법</a>
+      <a href="./#exemples">예시</a>
+      <a href="communaute.html">커뮤니티</a>
+      <a href="./#tarifs">요금</a>
+      <a href="./#questions">자주 묻는 질문</a>
+    </nav>
+    <span class="btn btn-small btn-soon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v11m-5-5 5 5 5-5M5 19h14"/></svg><span class="long">출시 예정: </span>Google Play</span>
+  </div>
+</header>
+
+<main id="contenu">
+<section class="doc community">
+  <div class="wrap">
+    <p class="eyebrow">커뮤니티</p>
+    <h1>사용자들의 매크로.</h1>
+    <p class="lead">마음에 드는 아이디어를 찾으면 ‘코드 복사’를 누른 뒤, Pépouze에서 <strong>커뮤니티 → 코드 붙여 넣기</strong>로 가세요. 저장하기 전에 Pépouze가 항상 매크로를 먼저 보여 줍니다.</p>
+
+    <div class="cm-tools">
+      <input id="cm-search" type="search" placeholder="검색: 알람, 자동차, 배터리…" aria-label="매크로 검색">
+      <label class="cm-check"><input id="cm-mine" type="checkbox"> 한국어만 보기</label>
+    </div>
+
+    <div id="cm-list" class="cm-list" aria-live="polite"><p class="cm-note">불러오는 중…</p></div>
+    <p class="cm-more"><button id="cm-more" class="btn btn-glass btn-small" hidden>더 보기</button></p>
+
+    <h2 id="publier">매크로 공유하기</h2>
+    <p>Pépouze에서 매크로를 열고 <strong>공유 → 코드 복사</strong>를 누르세요. 앱에서 바로 여기에 올릴 수도 있어요(공유 → 커뮤니티에 게시).</p>
+    <div class="box" id="cm-publish">
+      <p id="cm-signed-out">사이트에서 게시하려면 Google로 로그인하세요. 표시 이름은 공개되지만, 이메일은 절대 공개되지 않습니다.
+        <br><button id="cm-login" class="btn btn-cta btn-small">Google로 로그인</button></p>
+      <form id="cm-form" hidden>
+        <label>매크로 이름<input name="name" maxlength="60" required></label>
+        <label>어떤 매크로인지 (선택)<textarea name="description" maxlength="500" rows="3"></textarea></label>
+        <label>매크로 코드 (PZ1.로 시작)<textarea name="code" rows="3" required spellcheck="false"></textarea></label>
+        <label>표시할 닉네임<input name="author" maxlength="40" required></label>
+        <p class="cm-small">게시하면 누구나 이 매크로를 보고 복사할 수 있습니다. 공유하는 매크로에는 전화번호, 주소, 비밀번호를 넣지 마세요.</p>
+        <p><button class="btn btn-cta btn-small" type="submit">게시하기</button> <button class="btn btn-glass btn-small" type="button" id="cm-logout">로그아웃</button></p>
+        <p id="cm-form-note" class="cm-note" aria-live="polite"></p>
+      </form>
+    </div>
+
+    <h2>커뮤니티 규칙</h2>
+    <ul>
+      <li>이름 그대로 작동하는, 유용한 매크로를 공유해 주세요.</li>
+      <li>개인정보는 넣지 마세요: 전화번호, 주소, 지인의 이름, 비밀번호 등.</li>
+      <li>설치하는 사람 모르게 문자를 보내거나, 전화를 걸거나, 사이트에 접속하는 매크로는 금지입니다.</li>
+      <li>여러 번 신고된 매크로는 확인이 끝날 때까지 숨겨집니다.</li>
+    </ul>
+  </div>
+</section>
+
+<script type="application/json" id="cm-text">{
+  "loading": "불러오는 중…",
+  "empty": "일치하는 매크로가 없어요. 처음으로 공유해 보세요!",
+  "error": "지금은 라이브러리가 응답하지 않아요. 잠시 후 다시 시도해 주세요.",
+  "copy": "코드 복사",
+  "copied": "코드를 복사했어요! Pépouze → 커뮤니티에 붙여 넣으세요.",
+  "open": "Pépouze에서 열기",
+  "report": "신고",
+  "reported": "감사합니다. 신고가 접수됐어요.",
+  "report_login": "매크로를 신고하려면 (페이지 아래에서) 로그인하세요.",
+  "by": "작성자:",
+  "when": "언제",
+  "do": "실행",
+  "copies": "복사 수",
+  "careful": "주의: 이 매크로는 문자를 보내거나, 전화를 걸거나, 사이트에 접속합니다. 저장하기 전에 앱에서 꼭 확인하세요.",
+  "published": "게시됐어요, 감사합니다! 목록에 표시됩니다.",
+  "bad_code": "유효한 Pépouze 코드가 아니에요 (코드는 PZ1.로 시작합니다).",
+  "publish_error": "게시하지 못했어요. 다시 시도해 주세요.",
+  "login_error": "로그인하지 못했어요. 다시 시도해 주세요.",
+  "types": {
+    "power_connected": "충전기 연결", "power_disconnected": "충전기 분리", "battery_level": "배터리 잔량",
+    "screen_on": "화면 켜짐", "screen_off": "화면 꺼짐", "headset": "이어폰", "time": "시간", "boot": "재부팅",
+    "wifi": "Wi-Fi", "bluetooth": "블루투스", "app_opened": "앱 실행",
+    "media_volume": "음량", "ringer": "벨소리 모드", "dnd": "방해 금지", "media_control": "음악", "play_sound": "소리",
+    "speak": "텍스트 읽어 주기", "vibrate": "진동", "brightness": "밝기", "screen_timeout": "화면 꺼짐 시간",
+    "auto_rotate": "자동 회전", "torch": "손전등", "lock_screen": "화면 잠금", "screenshot": "스크린샷",
+    "launch_app": "앱 열기", "open_url": "링크 열기", "open_settings": "설정 열기", "http": "웹 요청",
+    "set_alarm": "알람", "timer": "타이머", "sms": "문자 보내기", "call": "전화 걸기", "notify": "알림",
+    "toast": "메시지", "clipboard": "클립보드", "system_button": "시스템 버튼", "click_text": "텍스트 누르기",
+    "wait": "대기", "run_macro": "매크로 실행", "enable_macro": "매크로 켜기"
+  }
+}</script>
+<script type="module" data-firebase="{&quot;apiKey&quot;: &quot;AIzaSyClyDLEbjQUtj0Z79w-20YoA_2XxYJfobE&quot;, &quot;authDomain&quot;: &quot;autotask-254ad.firebaseapp.com&quot;, &quot;projectId&quot;: &quot;autotask-254ad&quot;}" data-lang="ko" id="cm-script">
+const T = JSON.parse(document.getElementById('cm-text').textContent);
+const me = document.getElementById('cm-script');
+const config = JSON.parse(me.dataset.firebase || '{}');
+const LANG = me.dataset.lang;
+const SENSITIVE = new Set(['sms', 'call', 'http', 'open_url', 'clipboard']);
+const PAGE = 24;
+const $ = (id) => document.getElementById(id);
+const list = $('cm-list');
+let items = [], shown = PAGE, user = null, fb = null;
+
+const esc = (s) => String(s).replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+const label = (type) => T.types[type] || type.replace(/_/g, ' ');
+
+/** A share code is "PZ1." + base64url(gzip(JSON of the macro)). */
+async function decode(code) {
+  if (!/^PZ1\.[A-Za-z0-9_-]+$/.test(code)) throw new Error('format');
+  const b64 = code.slice(4).replace(/-/g, '+').replace(/_/g, '/');
+  const bytes = Uint8Array.from(atob(b64 + '==='.slice((b64.length + 3) % 4)), (c) => c.charCodeAt(0));
+  const text = await new Response(new Blob([bytes]).stream().pipeThrough(new DecompressionStream('gzip'))).text();
+  const macro = JSON.parse(text);
+  if (!Array.isArray(macro.triggers) || !Array.isArray(macro.actions)) throw new Error('shape');
+  return macro;
+}
+
+function render() {
+  const q = $('cm-search').value.trim().toLowerCase();
+  const onlyMine = $('cm-mine').checked;
+  const found = items.filter((m) => (!onlyMine || m.lang === LANG) && (!q || (m.name + ' ' + m.description + ' ' + [...m.triggers, ...m.actions].map(label).join(' ')).toLowerCase().includes(q)));
+  if (!found.length) { list.innerHTML = `<p class="cm-note">${esc(T.empty)}</p>`; $('cm-more').hidden = true; return; }
+  list.innerHTML = found.slice(0, shown).map((m) => `
+    <article class="card cm-item">
+      <h3>${esc(m.name)}</h3>
+      ${m.description ? `<p>${esc(m.description)}</p>` : ''}
+      <p class="cm-flow"><span class="cm-k">${esc(T.when)}</span> ${m.triggers.map((t) => `<span class="cm-chip">${esc(label(t))}</span>`).join(' ')}
+        <br><span class="cm-k">${esc(T.do)}</span> ${m.actions.map((a) => `<span class="cm-chip${SENSITIVE.has(a) ? ' warn' : ''}">${esc(label(a))}</span>`).join(' ')}</p>
+      ${m.actions.some((a) => SENSITIVE.has(a)) ? `<p class="cm-small warn">${esc(T.careful)}</p>` : ''}
+      <p class="cm-meta">${esc(T.by)} ${esc(m.author)} · ${esc(T.copies)}: ${m.copies || 0}</p>
+      <p class="cm-actions">
+        <button class="btn btn-cta btn-small" data-copy="${esc(m.id)}">${esc(T.copy)}</button>
+        <a class="btn btn-glass btn-small" href="pepouze://import?code=${encodeURIComponent(m.code)}">${esc(T.open)}</a>
+        <button class="cm-report" data-report="${esc(m.id)}">${esc(T.report)}</button>
+      </p>
+      <p class="cm-small" data-note="${esc(m.id)}" aria-live="polite"></p>
+    </article>`).join('');
+  $('cm-more').hidden = found.length <= shown;
+}
+
+async function start() {
+  if (!config.projectId) { list.innerHTML = `<p class="cm-note">${esc(T.error)}</p>`; return; }
+  const v = '11.0.2';
+  const [{ initializeApp }, fs, auth] = await Promise.all([
+    import(`https://www.gstatic.com/firebasejs/${v}/firebase-app.js`),
+    import(`https://www.gstatic.com/firebasejs/${v}/firebase-firestore.js`),
+    import(`https://www.gstatic.com/firebasejs/${v}/firebase-auth.js`),
+  ]);
+  const app = initializeApp(config);
+  fb = { fs, db: fs.getFirestore(app), auth, a: auth.getAuth(app) };
+  fb.a.languageCode = LANG;
+  auth.onAuthStateChanged(fb.a, (u) => {
+    user = u;
+    $('cm-signed-out').hidden = !!u;
+    $('cm-form').hidden = !u;
+    if (u && !$('cm-form').author.value) $('cm-form').author.value = (u.displayName || '').split(' ')[0].slice(0, 40);
+  });
+  await load();
+}
+
+async function load() {
+  const fs = fb.fs;
+  try {
+    const snap = await fs.getDocs(fs.query(fs.collection(fb.db, 'community'), fs.where('visible', '==', true), fs.orderBy('createdAt', 'desc'), fs.limit(300)));
+    items = snap.docs.map((d) => ({ id: d.id, ...d.data() }));
+    render();
+  } catch (e) {
+    console.warn(e);
+    list.innerHTML = `<p class="cm-note">${esc(T.error)}</p>`;
+  }
+}
+
+list.addEventListener('click', async (e) => {
+  const copy = e.target.closest('[data-copy]');
+  const report = e.target.closest('[data-report]');
+  if (copy) {
+    const m = items.find((x) => x.id === copy.dataset.copy);
+    await navigator.clipboard.writeText(m.code);
+    list.querySelector(`[data-note="${CSS.escape(m.id)}"]`).textContent = T.copied;
+    try { await fb.fs.updateDoc(fb.fs.doc(fb.db, 'community', m.id), { copies: fb.fs.increment(1) }); } catch {}
+  } else if (report) {
+    const id = report.dataset.report;
+    const note = list.querySelector(`[data-note="${CSS.escape(id)}"]`);
+    if (!user) { note.textContent = T.report_login; return; }
+    const m = items.find((x) => x.id === id);
+    const count = (m.reportCount || 0) + 1;
+    try {
+      await fb.fs.updateDoc(fb.fs.doc(fb.db, 'community', id), { reportCount: count, reporters: fb.fs.arrayUnion(user.uid), visible: count < 5 });
+      note.textContent = T.reported;
+      report.disabled = true;
+    } catch { note.textContent = T.reported; report.disabled = true; }
+  }
+});
+
+$('cm-search').addEventListener('input', () => { shown = PAGE; render(); });
+$('cm-mine').addEventListener('change', () => { shown = PAGE; render(); });
+$('cm-more').addEventListener('click', () => { shown += PAGE; render(); });
+$('cm-login').addEventListener('click', async () => {
+  try { await fb.auth.signInWithPopup(fb.a, new fb.auth.GoogleAuthProvider()); } catch { $('cm-signed-out').append(' ' + T.login_error); }
+});
+$('cm-logout').addEventListener('click', () => fb.auth.signOut(fb.a));
+$('cm-form').addEventListener('submit', async (e) => {
+  e.preventDefault();
+  const f = e.target, note = $('cm-form-note');
+  const code = f.code.value.trim().replace(/\s+/g, '');
+  let macro;
+  try { macro = await decode(code); } catch { note.textContent = T.bad_code; return; }
+  try {
+    await fb.fs.addDoc(fb.fs.collection(fb.db, 'community'), {
+      name: f.name.value.trim().slice(0, 60), description: f.description.value.trim().slice(0, 500), code, lang: LANG,
+      author: f.author.value.trim().slice(0, 40), uid: user.uid, createdAt: fb.fs.serverTimestamp(),
+      triggers: macro.triggers.map((t) => String(t.type)).slice(0, 10), actions: macro.actions.map((a) => String(a.type)).slice(0, 30),
+      reportCount: 0, reporters: [], visible: true, copies: 0,
+    });
+    note.textContent = T.published;
+    f.reset();
+    f.author.value = (user.displayName || '').split(' ')[0].slice(0, 40);
+    load();
+  } catch (err) { console.warn(err); note.textContent = T.publish_error; }
+});
+
+$('cm-mine').closest('label').hidden = false;
+start();
+</script>
+<script>
+// gentle entrances as sections scroll into view; everything shows at once without this or with reduced motion
+(() => {
+  const els = document.querySelectorAll('.reveal');
+  if (!('IntersectionObserver' in window) || matchMedia('(prefers-reduced-motion: reduce)').matches) { els.forEach((e) => e.classList.add('in')); return; }
+  const io = new IntersectionObserver((list) => { for (const e of list) if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } }, { rootMargin: '0px 0px -6% 0px', threshold: 0.06 });
+  els.forEach((e) => io.observe(e));
+})();
+</script>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="about">
+      <a class="brand" href="./"><img src="../assets/icon-192.png" alt="" width="36" height="36">Pépouze</a>
+      <p>‘언제… 실행…’ 간단한 규칙으로 휴대폰을 자동화하세요.</p>
+    </div>
+    <div>
+      <h2>앱</h2>
+      <ul>
+        <li><a href="./#fonctionnement">사용 방법</a></li>
+        <li><a href="./#exemples">예시</a></li>
+        <li><a href="communaute.html">커뮤니티</a></li>
+        <li><a href="./#tarifs">무료 또는 프리미엄</a></li>
+        <li><a href="./#questions">자주 묻는 질문</a></li>
+      </ul>
+    </div>
+    <div>
+      <h2>내 데이터</h2>
+      <ul>
+        <li><a href="confidentialite.html">개인정보 처리방침</a></li>
+        <li><a href="suppression-compte.html">계정 삭제</a></li>
+        <li><a href="mentions-legales.html">법적 고지</a></li>
+      </ul>
+    </div>
+    <div>
+      <h2>문의</h2>
+      <ul>
+        <li><a href="mailto:pepouze.apk@gmail.com">pepouze.apk@gmail.com</a></li>
+        
+      </ul>
+    </div>
+    <p class="legal">© 2026 Pépouze. Google Play는 Google LLC의 상표입니다. 이 사이트는 쿠키와 방문자 분석을 사용하지 않습니다.</p>
+    <nav class="langs" aria-label="언어"><a href="../communaute.html" hreflang="fr" lang="fr">Français</a> <a href="../de/communaute.html" hreflang="de" lang="de">Deutsch</a> <a href="../en/communaute.html" hreflang="en" lang="en">English</a> <a href="../es/communaute.html" hreflang="es" lang="es">Español</a> <a href="../id/communaute.html" hreflang="id" lang="id">Bahasa Indonesia</a> <a href="../it/communaute.html" hreflang="it" lang="it">Italiano</a> <a href="../ja/communaute.html" hreflang="ja" lang="ja">日本語</a> <span aria-current="true">한국어</span> <a href="../nl/communaute.html" hreflang="nl" lang="nl">Nederlands</a> <a href="../pl/communaute.html" hreflang="pl" lang="pl">Polski</a> <a href="../pt/communaute.html" hreflang="pt-BR" lang="pt-BR">Português</a> <a href="../tr/communaute.html" hreflang="tr" lang="tr">Türkçe</a> <a href="../zh/communaute.html" hreflang="zh-Hans" lang="zh-Hans">简体中文</a></nav>
+  </div>
+</footer>
+</body>
+</html>

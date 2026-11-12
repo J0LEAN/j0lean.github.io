@@ -1,0 +1,312 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Community · Pépouze</title>
+<meta name="description" content="Macros shared by Pépouze users: copy a code, paste it into the app, or publish your own.">
+<link rel="canonical" href="https://j0lean.github.io/en/communaute.html">
+<meta name="theme-color" content="#050508">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="en_US">
+<link rel="alternate" hreflang="fr" href="https://j0lean.github.io/communaute.html">
+<link rel="alternate" hreflang="de" href="https://j0lean.github.io/de/communaute.html">
+<link rel="alternate" hreflang="en" href="https://j0lean.github.io/en/communaute.html">
+<link rel="alternate" hreflang="es" href="https://j0lean.github.io/es/communaute.html">
+<link rel="alternate" hreflang="id" href="https://j0lean.github.io/id/communaute.html">
+<link rel="alternate" hreflang="it" href="https://j0lean.github.io/it/communaute.html">
+<link rel="alternate" hreflang="ja" href="https://j0lean.github.io/ja/communaute.html">
+<link rel="alternate" hreflang="ko" href="https://j0lean.github.io/ko/communaute.html">
+<link rel="alternate" hreflang="nl" href="https://j0lean.github.io/nl/communaute.html">
+<link rel="alternate" hreflang="pl" href="https://j0lean.github.io/pl/communaute.html">
+<link rel="alternate" hreflang="pt-BR" href="https://j0lean.github.io/pt/communaute.html">
+<link rel="alternate" hreflang="tr" href="https://j0lean.github.io/tr/communaute.html">
+<link rel="alternate" hreflang="zh-Hans" href="https://j0lean.github.io/zh/communaute.html">
+<link rel="alternate" hreflang="x-default" href="https://j0lean.github.io/en/communaute.html">
+<meta property="og:site_name" content="Pépouze">
+<meta property="og:title" content="Community · Pépouze">
+<meta property="og:description" content="Macros shared by Pépouze users: copy a code, paste it into the app, or publish your own.">
+<meta property="og:url" content="https://j0lean.github.io/en/communaute.html">
+<meta property="og:image" content="https://j0lean.github.io/assets/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="../favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="192x192" href="../assets/icon-192.png">
+<link rel="apple-touch-icon" href="../assets/apple-touch-icon.png">
+<link rel="preload" href="../assets/fonts/jakarta.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="../assets/fonts/archivo-expanded-black.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="../assets/site.css?v=4ec222e2">
+<script>document.documentElement.classList.add('js')</script>
+</head>
+<body>
+<a class="skip" href="#contenu">Skip to content</a>
+<div class="sky" aria-hidden="true"></div>
+
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="./" aria-label="Pépouze, home"><img src="../assets/icon-192.png" alt="" width="36" height="36">Pépouze</a>
+    <nav class="nav" aria-label="Sections">
+      <a href="./#fonctionnement">How it works</a>
+      <a href="./#exemples">Examples</a>
+      <a href="communaute.html">Community</a>
+      <a href="./#tarifs">Pricing</a>
+      <a href="./#questions">FAQ</a>
+    </nav>
+    <span class="btn btn-small btn-soon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v11m-5-5 5 5 5-5M5 19h14"/></svg><span class="long">Coming soon to </span>Google Play</span>
+  </div>
+</header>
+
+<main id="contenu">
+<section class="doc community">
+  <div class="wrap">
+    <p class="eyebrow">Community</p>
+    <h1>Macros from our users.</h1>
+    <p class="lead">Find an idea, tap “Copy code”, then in Pépouze: <strong>Community → Paste a code</strong>. Pépouze always shows you the macro before saving it.</p>
+
+    <div class="cm-tools">
+      <input id="cm-search" type="search" placeholder="Search: alarm, car, battery…" aria-label="Search for a macro">
+      <label class="cm-check"><input id="cm-mine" type="checkbox"> Only in English</label>
+    </div>
+
+    <div id="cm-list" class="cm-list" aria-live="polite"><p class="cm-note">Loading…</p></div>
+    <p class="cm-more"><button id="cm-more" class="btn btn-glass btn-small" hidden>Show more</button></p>
+
+    <h2 id="publier">Share a macro</h2>
+    <p>In Pépouze, open a macro and tap <strong>Share → Copy code</strong>. You can also publish it here straight from the app (Share → Publish to the community).</p>
+    <div class="box" id="cm-publish">
+      <p id="cm-signed-out">To publish from the website, sign in with Google. Your display name will be visible, never your email.
+        <br><button id="cm-login" class="btn btn-cta btn-small">Sign in with Google</button></p>
+      <form id="cm-form" hidden>
+        <label>Macro name<input name="name" maxlength="60" required></label>
+        <label>What it does (optional)<textarea name="description" maxlength="500" rows="3"></textarea></label>
+        <label>Macro code (starts with PZ1.)<textarea name="code" rows="3" required spellcheck="false"></textarea></label>
+        <label>Display name<input name="author" maxlength="40" required></label>
+        <p class="cm-small">By publishing, you agree that this macro can be seen and copied by everyone. Never put a phone number, an address or a password in a shared macro.</p>
+        <p><button class="btn btn-cta btn-small" type="submit">Publish</button> <button class="btn btn-glass btn-small" type="button" id="cm-logout">Sign out</button></p>
+        <p id="cm-form-note" class="cm-note" aria-live="polite"></p>
+      </form>
+    </div>
+
+    <h2>Community rules</h2>
+    <ul>
+      <li>Share useful macros that do what their name says.</li>
+      <li>No personal data: phone numbers, addresses, names of people close to you, passwords.</li>
+      <li>No macros that send text messages, make calls or contact a website without the knowledge of the person installing them.</li>
+      <li>A macro reported several times is hidden until it's been reviewed.</li>
+    </ul>
+  </div>
+</section>
+
+<script type="application/json" id="cm-text">{
+  "loading": "Loading…",
+  "empty": "No macros match. Be the first to share one!",
+  "error": "The library isn't responding right now. Please try again later.",
+  "copy": "Copy code",
+  "copied": "Code copied! Paste it in Pépouze → Community.",
+  "open": "Open in Pépouze",
+  "report": "Report",
+  "reported": "Thanks, it's been reported.",
+  "report_login": "Sign in (at the bottom of the page) to report a macro.",
+  "by": "by",
+  "when": "When",
+  "do": "Do",
+  "copies": "copies",
+  "careful": "Heads up: this macro sends text messages, makes calls, or contacts a website. Check it in the app before saving it.",
+  "published": "Published, thank you! It now appears in the list.",
+  "bad_code": "This isn't a valid Pépouze code (it starts with PZ1.).",
+  "publish_error": "Publishing failed. Please try again.",
+  "login_error": "Sign-in failed. Please try again.",
+  "types": {
+    "power_connected": "Charger plugged in", "power_disconnected": "Charger unplugged", "battery_level": "Battery level",
+    "screen_on": "Screen on", "screen_off": "Screen off", "headset": "Headphones", "time": "Time", "boot": "Restart",
+    "wifi": "Wi-Fi", "bluetooth": "Bluetooth", "app_opened": "App opened",
+    "media_volume": "Volume", "ringer": "Ringer mode", "dnd": "Do Not Disturb", "media_control": "Music", "play_sound": "Sound",
+    "speak": "Read a text aloud", "vibrate": "Vibrate", "brightness": "Brightness", "screen_timeout": "Screen timeout",
+    "auto_rotate": "Auto-rotate", "torch": "Flashlight", "lock_screen": "Lock screen", "screenshot": "Screenshot",
+    "launch_app": "Open an app", "open_url": "Open a link", "open_settings": "Open a setting", "http": "Web request",
+    "set_alarm": "Alarm", "timer": "Timer", "sms": "Send a text", "call": "Call", "notify": "Notification",
+    "toast": "Message", "clipboard": "Clipboard", "system_button": "System button", "click_text": "Tap a text",
+    "wait": "Wait", "run_macro": "Run a macro", "enable_macro": "Turn on a macro"
+  }
+}</script>
+<script type="module" data-firebase="{&quot;apiKey&quot;: &quot;AIzaSyClyDLEbjQUtj0Z79w-20YoA_2XxYJfobE&quot;, &quot;authDomain&quot;: &quot;autotask-254ad.firebaseapp.com&quot;, &quot;projectId&quot;: &quot;autotask-254ad&quot;}" data-lang="en" id="cm-script">
+const T = JSON.parse(document.getElementById('cm-text').textContent);
+const me = document.getElementById('cm-script');
+const config = JSON.parse(me.dataset.firebase || '{}');
+const LANG = me.dataset.lang;
+const SENSITIVE = new Set(['sms', 'call', 'http', 'open_url', 'clipboard']);
+const PAGE = 24;
+const $ = (id) => document.getElementById(id);
+const list = $('cm-list');
+let items = [], shown = PAGE, user = null, fb = null;
+
+const esc = (s) => String(s).replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+const label = (type) => T.types[type] || type.replace(/_/g, ' ');
+
+/** A share code is "PZ1." + base64url(gzip(JSON of the macro)). */
+async function decode(code) {
+  if (!/^PZ1\.[A-Za-z0-9_-]+$/.test(code)) throw new Error('format');
+  const b64 = code.slice(4).replace(/-/g, '+').replace(/_/g, '/');
+  const bytes = Uint8Array.from(atob(b64 + '==='.slice((b64.length + 3) % 4)), (c) => c.charCodeAt(0));
+  const text = await new Response(new Blob([bytes]).stream().pipeThrough(new DecompressionStream('gzip'))).text();
+  const macro = JSON.parse(text);
+  if (!Array.isArray(macro.triggers) || !Array.isArray(macro.actions)) throw new Error('shape');
+  return macro;
+}
+
+function render() {
+  const q = $('cm-search').value.trim().toLowerCase();
+  const onlyMine = $('cm-mine').checked;
+  const found = items.filter((m) => (!onlyMine || m.lang === LANG) && (!q || (m.name + ' ' + m.description + ' ' + [...m.triggers, ...m.actions].map(label).join(' ')).toLowerCase().includes(q)));
+  if (!found.length) { list.innerHTML = `<p class="cm-note">${esc(T.empty)}</p>`; $('cm-more').hidden = true; return; }
+  list.innerHTML = found.slice(0, shown).map((m) => `
+    <article class="card cm-item">
+      <h3>${esc(m.name)}</h3>
+      ${m.description ? `<p>${esc(m.description)}</p>` : ''}
+      <p class="cm-flow"><span class="cm-k">${esc(T.when)}</span> ${m.triggers.map((t) => `<span class="cm-chip">${esc(label(t))}</span>`).join(' ')}
+        <br><span class="cm-k">${esc(T.do)}</span> ${m.actions.map((a) => `<span class="cm-chip${SENSITIVE.has(a) ? ' warn' : ''}">${esc(label(a))}</span>`).join(' ')}</p>
+      ${m.actions.some((a) => SENSITIVE.has(a)) ? `<p class="cm-small warn">${esc(T.careful)}</p>` : ''}
+      <p class="cm-meta">${esc(T.by)} ${esc(m.author)} · ${esc(T.copies)}: ${m.copies || 0}</p>
+      <p class="cm-actions">
+        <button class="btn btn-cta btn-small" data-copy="${esc(m.id)}">${esc(T.copy)}</button>
+        <a class="btn btn-glass btn-small" href="pepouze://import?code=${encodeURIComponent(m.code)}">${esc(T.open)}</a>
+        <button class="cm-report" data-report="${esc(m.id)}">${esc(T.report)}</button>
+      </p>
+      <p class="cm-small" data-note="${esc(m.id)}" aria-live="polite"></p>
+    </article>`).join('');
+  $('cm-more').hidden = found.length <= shown;
+}
+
+async function start() {
+  if (!config.projectId) { list.innerHTML = `<p class="cm-note">${esc(T.error)}</p>`; return; }
+  const v = '11.0.2';
+  const [{ initializeApp }, fs, auth] = await Promise.all([
+    import(`https://www.gstatic.com/firebasejs/${v}/firebase-app.js`),
+    import(`https://www.gstatic.com/firebasejs/${v}/firebase-firestore.js`),
+    import(`https://www.gstatic.com/firebasejs/${v}/firebase-auth.js`),
+  ]);
+  const app = initializeApp(config);
+  fb = { fs, db: fs.getFirestore(app), auth, a: auth.getAuth(app) };
+  fb.a.languageCode = LANG;
+  auth.onAuthStateChanged(fb.a, (u) => {
+    user = u;
+    $('cm-signed-out').hidden = !!u;
+    $('cm-form').hidden = !u;
+    if (u && !$('cm-form').author.value) $('cm-form').author.value = (u.displayName || '').split(' ')[0].slice(0, 40);
+  });
+  await load();
+}
+
+async function load() {
+  const fs = fb.fs;
+  try {
+    const snap = await fs.getDocs(fs.query(fs.collection(fb.db, 'community'), fs.where('visible', '==', true), fs.orderBy('createdAt', 'desc'), fs.limit(300)));
+    items = snap.docs.map((d) => ({ id: d.id, ...d.data() }));
+    render();
+  } catch (e) {
+    console.warn(e);
+    list.innerHTML = `<p class="cm-note">${esc(T.error)}</p>`;
+  }
+}
+
+list.addEventListener('click', async (e) => {
+  const copy = e.target.closest('[data-copy]');
+  const report = e.target.closest('[data-report]');
+  if (copy) {
+    const m = items.find((x) => x.id === copy.dataset.copy);
+    await navigator.clipboard.writeText(m.code);
+    list.querySelector(`[data-note="${CSS.escape(m.id)}"]`).textContent = T.copied;
+    try { await fb.fs.updateDoc(fb.fs.doc(fb.db, 'community', m.id), { copies: fb.fs.increment(1) }); } catch {}
+  } else if (report) {
+    const id = report.dataset.report;
+    const note = list.querySelector(`[data-note="${CSS.escape(id)}"]`);
+    if (!user) { note.textContent = T.report_login; return; }
+    const m = items.find((x) => x.id === id);
+    const count = (m.reportCount || 0) + 1;
+    try {
+      await fb.fs.updateDoc(fb.fs.doc(fb.db, 'community', id), { reportCount: count, reporters: fb.fs.arrayUnion(user.uid), visible: count < 5 });
+      note.textContent = T.reported;
+      report.disabled = true;
+    } catch { note.textContent = T.reported; report.disabled = true; }
+  }
+});
+
+$('cm-search').addEventListener('input', () => { shown = PAGE; render(); });
+$('cm-mine').addEventListener('change', () => { shown = PAGE; render(); });
+$('cm-more').addEventListener('click', () => { shown += PAGE; render(); });
+$('cm-login').addEventListener('click', async () => {
+  try { await fb.auth.signInWithPopup(fb.a, new fb.auth.GoogleAuthProvider()); } catch { $('cm-signed-out').append(' ' + T.login_error); }
+});
+$('cm-logout').addEventListener('click', () => fb.auth.signOut(fb.a));
+$('cm-form').addEventListener('submit', async (e) => {
+  e.preventDefault();
+  const f = e.target, note = $('cm-form-note');
+  const code = f.code.value.trim().replace(/\s+/g, '');
+  let macro;
+  try { macro = await decode(code); } catch { note.textContent = T.bad_code; return; }
+  try {
+    await fb.fs.addDoc(fb.fs.collection(fb.db, 'community'), {
+      name: f.name.value.trim().slice(0, 60), description: f.description.value.trim().slice(0, 500), code, lang: LANG,
+      author: f.author.value.trim().slice(0, 40), uid: user.uid, createdAt: fb.fs.serverTimestamp(),
+      triggers: macro.triggers.map((t) => String(t.type)).slice(0, 10), actions: macro.actions.map((a) => String(a.type)).slice(0, 30),
+      reportCount: 0, reporters: [], visible: true, copies: 0,
+    });
+    note.textContent = T.published;
+    f.reset();
+    f.author.value = (user.displayName || '').split(' ')[0].slice(0, 40);
+    load();
+  } catch (err) { console.warn(err); note.textContent = T.publish_error; }
+});
+
+$('cm-mine').closest('label').hidden = false;
+start();
+</script>
+<script>
+// gentle entrances as sections scroll into view; everything shows at once without this or with reduced motion
+(() => {
+  const els = document.querySelectorAll('.reveal');
+  if (!('IntersectionObserver' in window) || matchMedia('(prefers-reduced-motion: reduce)').matches) { els.forEach((e) => e.classList.add('in')); return; }
+  const io = new IntersectionObserver((list) => { for (const e of list) if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } }, { rootMargin: '0px 0px -6% 0px', threshold: 0.06 });
+  els.forEach((e) => io.observe(e));
+})();
+</script>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="about">
+      <a class="brand" href="./"><img src="../assets/icon-192.png" alt="" width="36" height="36">Pépouze</a>
+      <p>Automate your phone with simple rules: “When… Do…”.</p>
+    </div>
+    <div>
+      <h2>The app</h2>
+      <ul>
+        <li><a href="./#fonctionnement">How it works</a></li>
+        <li><a href="./#exemples">Examples</a></li>
+        <li><a href="communaute.html">Community</a></li>
+        <li><a href="./#tarifs">Free or Premium</a></li>
+        <li><a href="./#questions">FAQ</a></li>
+      </ul>
+    </div>
+    <div>
+      <h2>Your data</h2>
+      <ul>
+        <li><a href="confidentialite.html">Privacy policy</a></li>
+        <li><a href="suppression-compte.html">Delete my account</a></li>
+        <li><a href="mentions-legales.html">Legal notice</a></li>
+      </ul>
+    </div>
+    <div>
+      <h2>Contact</h2>
+      <ul>
+        <li><a href="mailto:pepouze.apk@gmail.com">pepouze.apk@gmail.com</a></li>
+        
+      </ul>
+    </div>
+    <p class="legal">© 2026 Pépouze. Google Play is a trademark of Google LLC. This site uses no cookies and no analytics.</p>
+    <nav class="langs" aria-label="Languages"><a href="../communaute.html" hreflang="fr" lang="fr">Français</a> <a href="../de/communaute.html" hreflang="de" lang="de">Deutsch</a> <span aria-current="true">English</span> <a href="../es/communaute.html" hreflang="es" lang="es">Español</a> <a href="../id/communaute.html" hreflang="id" lang="id">Bahasa Indonesia</a> <a href="../it/communaute.html" hreflang="it" lang="it">Italiano</a> <a href="../ja/communaute.html" hreflang="ja" lang="ja">日本語</a> <a href="../ko/communaute.html" hreflang="ko" lang="ko">한국어</a> <a href="../nl/communaute.html" hreflang="nl" lang="nl">Nederlands</a> <a href="../pl/communaute.html" hreflang="pl" lang="pl">Polski</a> <a href="../pt/communaute.html" hreflang="pt-BR" lang="pt-BR">Português</a> <a href="../tr/communaute.html" hreflang="tr" lang="tr">Türkçe</a> <a href="../zh/communaute.html" hreflang="zh-Hans" lang="zh-Hans">简体中文</a></nav>
+  </div>
+</footer>
+</body>
+</html>

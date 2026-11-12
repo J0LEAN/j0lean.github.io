@@ -1,0 +1,312 @@
+<!doctype html>
+<html lang="zh-Hans">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>社区 · Pépouze</title>
+<meta name="description" content="Pépouze 用户分享的宏：复制代码，粘贴到应用中，或者发布你自己的宏。">
+<link rel="canonical" href="https://j0lean.github.io/zh/communaute.html">
+<meta name="theme-color" content="#050508">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="zh_CN">
+<link rel="alternate" hreflang="fr" href="https://j0lean.github.io/communaute.html">
+<link rel="alternate" hreflang="de" href="https://j0lean.github.io/de/communaute.html">
+<link rel="alternate" hreflang="en" href="https://j0lean.github.io/en/communaute.html">
+<link rel="alternate" hreflang="es" href="https://j0lean.github.io/es/communaute.html">
+<link rel="alternate" hreflang="id" href="https://j0lean.github.io/id/communaute.html">
+<link rel="alternate" hreflang="it" href="https://j0lean.github.io/it/communaute.html">
+<link rel="alternate" hreflang="ja" href="https://j0lean.github.io/ja/communaute.html">
+<link rel="alternate" hreflang="ko" href="https://j0lean.github.io/ko/communaute.html">
+<link rel="alternate" hreflang="nl" href="https://j0lean.github.io/nl/communaute.html">
+<link rel="alternate" hreflang="pl" href="https://j0lean.github.io/pl/communaute.html">
+<link rel="alternate" hreflang="pt-BR" href="https://j0lean.github.io/pt/communaute.html">
+<link rel="alternate" hreflang="tr" href="https://j0lean.github.io/tr/communaute.html">
+<link rel="alternate" hreflang="zh-Hans" href="https://j0lean.github.io/zh/communaute.html">
+<link rel="alternate" hreflang="x-default" href="https://j0lean.github.io/en/communaute.html">
+<meta property="og:site_name" content="Pépouze">
+<meta property="og:title" content="社区 · Pépouze">
+<meta property="og:description" content="Pépouze 用户分享的宏：复制代码，粘贴到应用中，或者发布你自己的宏。">
+<meta property="og:url" content="https://j0lean.github.io/zh/communaute.html">
+<meta property="og:image" content="https://j0lean.github.io/assets/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="../favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="192x192" href="../assets/icon-192.png">
+<link rel="apple-touch-icon" href="../assets/apple-touch-icon.png">
+<link rel="preload" href="../assets/fonts/jakarta.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="../assets/fonts/archivo-expanded-black.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="../assets/site.css?v=4ec222e2">
+<script>document.documentElement.classList.add('js')</script>
+</head>
+<body>
+<a class="skip" href="#contenu">跳到正文</a>
+<div class="sky" aria-hidden="true"></div>
+
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="./" aria-label="Pépouze, 首页"><img src="../assets/icon-192.png" alt="" width="36" height="36">Pépouze</a>
+    <nav class="nav" aria-label="栏目">
+      <a href="./#fonctionnement">使用方法</a>
+      <a href="./#exemples">示例</a>
+      <a href="communaute.html">社区</a>
+      <a href="./#tarifs">价格</a>
+      <a href="./#questions">常见问题</a>
+    </nav>
+    <span class="btn btn-small btn-soon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v11m-5-5 5 5 5-5M5 19h14"/></svg><span class="long">即将登陆 </span>Google Play</span>
+  </div>
+</header>
+
+<main id="contenu">
+<section class="doc community">
+  <div class="wrap">
+    <p class="eyebrow">社区</p>
+    <h1>用户分享的宏。</h1>
+    <p class="lead">找到喜欢的点子，点按“复制代码”，然后在 Pépouze 中进入<strong>社区 → 粘贴代码</strong>。保存之前，Pépouze 总会先让你看看这个宏。</p>
+
+    <div class="cm-tools">
+      <input id="cm-search" type="search" placeholder="搜索：闹钟、汽车、电池……" aria-label="搜索宏">
+      <label class="cm-check"><input id="cm-mine" type="checkbox"> 仅显示中文</label>
+    </div>
+
+    <div id="cm-list" class="cm-list" aria-live="polite"><p class="cm-note">正在加载……</p></div>
+    <p class="cm-more"><button id="cm-more" class="btn btn-glass btn-small" hidden>查看更多</button></p>
+
+    <h2 id="publier">分享一个宏</h2>
+    <p>在 Pépouze 中打开一个宏，点按<strong>分享 → 复制代码</strong>。你也可以直接从应用发布到这里（分享 → 发布到社区）。</p>
+    <div class="box" id="cm-publish">
+      <p id="cm-signed-out">如需从网站发布，请使用 Google 登录。你的显示名称会公开，电子邮件地址绝不会公开。
+        <br><button id="cm-login" class="btn btn-cta btn-small">使用 Google 登录</button></p>
+      <form id="cm-form" hidden>
+        <label>宏的名称<input name="name" maxlength="60" required></label>
+        <label>它的作用（可选）<textarea name="description" maxlength="500" rows="3"></textarea></label>
+        <label>宏代码（以 PZ1. 开头）<textarea name="code" rows="3" required spellcheck="false"></textarea></label>
+        <label>显示的昵称<input name="author" maxlength="40" required></label>
+        <p class="cm-small">发布即表示你同意所有人都可以查看和复制这个宏。请不要在分享的宏中填写电话号码、地址或密码。</p>
+        <p><button class="btn btn-cta btn-small" type="submit">发布</button> <button class="btn btn-glass btn-small" type="button" id="cm-logout">退出登录</button></p>
+        <p id="cm-form-note" class="cm-note" aria-live="polite"></p>
+      </form>
+    </div>
+
+    <h2>社区规则</h2>
+    <ul>
+      <li>分享实用的宏，确保它做的就是名称所说的事。</li>
+      <li>不要包含任何个人数据：电话号码、地址、亲友的名字、密码。</li>
+      <li>禁止在安装者不知情的情况下发送短信、拨打电话或连接网站的宏。</li>
+      <li>被多次举报的宏会被隐藏，直到核实完毕。</li>
+    </ul>
+  </div>
+</section>
+
+<script type="application/json" id="cm-text">{
+  "loading": "正在加载……",
+  "empty": "没有找到匹配的宏。来做第一个分享的人吧！",
+  "error": "宏库暂时没有响应，请稍后再试。",
+  "copy": "复制代码",
+  "copied": "代码已复制！请粘贴到 Pépouze → 社区。",
+  "open": "在 Pépouze 中打开",
+  "report": "举报",
+  "reported": "谢谢，已收到举报。",
+  "report_login": "请先登录（在页面底部）再举报宏。",
+  "by": "作者：",
+  "when": "当",
+  "do": "执行",
+  "copies": "复制次数",
+  "careful": "注意：这个宏会发送短信、拨打电话或连接网站。保存前请先在应用中检查。",
+  "published": "发布成功，谢谢！它已出现在列表中。",
+  "bad_code": "这不是有效的 Pépouze 代码（代码以 PZ1. 开头）。",
+  "publish_error": "发布失败，请重试。",
+  "login_error": "登录失败，请重试。",
+  "types": {
+    "power_connected": "连接充电器", "power_disconnected": "断开充电器", "battery_level": "电量",
+    "screen_on": "屏幕亮起", "screen_off": "屏幕关闭", "headset": "耳机", "time": "时间", "boot": "重启",
+    "wifi": "Wi-Fi", "bluetooth": "蓝牙", "app_opened": "打开应用时",
+    "media_volume": "音量", "ringer": "铃声模式", "dnd": "勿扰模式", "media_control": "音乐", "play_sound": "声音",
+    "speak": "朗读文字", "vibrate": "振动", "brightness": "亮度", "screen_timeout": "屏幕休眠",
+    "auto_rotate": "自动旋转", "torch": "手电筒", "lock_screen": "锁屏", "screenshot": "截屏",
+    "launch_app": "打开应用", "open_url": "打开链接", "open_settings": "打开设置", "http": "网络请求",
+    "set_alarm": "闹钟", "timer": "计时器", "sms": "发送短信", "call": "拨打电话", "notify": "通知",
+    "toast": "消息", "clipboard": "剪贴板", "system_button": "系统按键", "click_text": "点按文字",
+    "wait": "等待", "run_macro": "运行宏", "enable_macro": "启用宏"
+  }
+}</script>
+<script type="module" data-firebase="{&quot;apiKey&quot;: &quot;AIzaSyClyDLEbjQUtj0Z79w-20YoA_2XxYJfobE&quot;, &quot;authDomain&quot;: &quot;autotask-254ad.firebaseapp.com&quot;, &quot;projectId&quot;: &quot;autotask-254ad&quot;}" data-lang="zh" id="cm-script">
+const T = JSON.parse(document.getElementById('cm-text').textContent);
+const me = document.getElementById('cm-script');
+const config = JSON.parse(me.dataset.firebase || '{}');
+const LANG = me.dataset.lang;
+const SENSITIVE = new Set(['sms', 'call', 'http', 'open_url', 'clipboard']);
+const PAGE = 24;
+const $ = (id) => document.getElementById(id);
+const list = $('cm-list');
+let items = [], shown = PAGE, user = null, fb = null;
+
+const esc = (s) => String(s).replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+const label = (type) => T.types[type] || type.replace(/_/g, ' ');
+
+/** A share code is "PZ1." + base64url(gzip(JSON of the macro)). */
+async function decode(code) {
+  if (!/^PZ1\.[A-Za-z0-9_-]+$/.test(code)) throw new Error('format');
+  const b64 = code.slice(4).replace(/-/g, '+').replace(/_/g, '/');
+  const bytes = Uint8Array.from(atob(b64 + '==='.slice((b64.length + 3) % 4)), (c) => c.charCodeAt(0));
+  const text = await new Response(new Blob([bytes]).stream().pipeThrough(new DecompressionStream('gzip'))).text();
+  const macro = JSON.parse(text);
+  if (!Array.isArray(macro.triggers) || !Array.isArray(macro.actions)) throw new Error('shape');
+  return macro;
+}
+
+function render() {
+  const q = $('cm-search').value.trim().toLowerCase();
+  const onlyMine = $('cm-mine').checked;
+  const found = items.filter((m) => (!onlyMine || m.lang === LANG) && (!q || (m.name + ' ' + m.description + ' ' + [...m.triggers, ...m.actions].map(label).join(' ')).toLowerCase().includes(q)));
+  if (!found.length) { list.innerHTML = `<p class="cm-note">${esc(T.empty)}</p>`; $('cm-more').hidden = true; return; }
+  list.innerHTML = found.slice(0, shown).map((m) => `
+    <article class="card cm-item">
+      <h3>${esc(m.name)}</h3>
+      ${m.description ? `<p>${esc(m.description)}</p>` : ''}
+      <p class="cm-flow"><span class="cm-k">${esc(T.when)}</span> ${m.triggers.map((t) => `<span class="cm-chip">${esc(label(t))}</span>`).join(' ')}
+        <br><span class="cm-k">${esc(T.do)}</span> ${m.actions.map((a) => `<span class="cm-chip${SENSITIVE.has(a) ? ' warn' : ''}">${esc(label(a))}</span>`).join(' ')}</p>
+      ${m.actions.some((a) => SENSITIVE.has(a)) ? `<p class="cm-small warn">${esc(T.careful)}</p>` : ''}
+      <p class="cm-meta">${esc(T.by)} ${esc(m.author)} · ${esc(T.copies)}: ${m.copies || 0}</p>
+      <p class="cm-actions">
+        <button class="btn btn-cta btn-small" data-copy="${esc(m.id)}">${esc(T.copy)}</button>
+        <a class="btn btn-glass btn-small" href="pepouze://import?code=${encodeURIComponent(m.code)}">${esc(T.open)}</a>
+        <button class="cm-report" data-report="${esc(m.id)}">${esc(T.report)}</button>
+      </p>
+      <p class="cm-small" data-note="${esc(m.id)}" aria-live="polite"></p>
+    </article>`).join('');
+  $('cm-more').hidden = found.length <= shown;
+}
+
+async function start() {
+  if (!config.projectId) { list.innerHTML = `<p class="cm-note">${esc(T.error)}</p>`; return; }
+  const v = '11.0.2';
+  const [{ initializeApp }, fs, auth] = await Promise.all([
+    import(`https://www.gstatic.com/firebasejs/${v}/firebase-app.js`),
+    import(`https://www.gstatic.com/firebasejs/${v}/firebase-firestore.js`),
+    import(`https://www.gstatic.com/firebasejs/${v}/firebase-auth.js`),
+  ]);
+  const app = initializeApp(config);
+  fb = { fs, db: fs.getFirestore(app), auth, a: auth.getAuth(app) };
+  fb.a.languageCode = LANG;
+  auth.onAuthStateChanged(fb.a, (u) => {
+    user = u;
+    $('cm-signed-out').hidden = !!u;
+    $('cm-form').hidden = !u;
+    if (u && !$('cm-form').author.value) $('cm-form').author.value = (u.displayName || '').split(' ')[0].slice(0, 40);
+  });
+  await load();
+}
+
+async function load() {
+  const fs = fb.fs;
+  try {
+    const snap = await fs.getDocs(fs.query(fs.collection(fb.db, 'community'), fs.where('visible', '==', true), fs.orderBy('createdAt', 'desc'), fs.limit(300)));
+    items = snap.docs.map((d) => ({ id: d.id, ...d.data() }));
+    render();
+  } catch (e) {
+    console.warn(e);
+    list.innerHTML = `<p class="cm-note">${esc(T.error)}</p>`;
+  }
+}
+
+list.addEventListener('click', async (e) => {
+  const copy = e.target.closest('[data-copy]');
+  const report = e.target.closest('[data-report]');
+  if (copy) {
+    const m = items.find((x) => x.id === copy.dataset.copy);
+    await navigator.clipboard.writeText(m.code);
+    list.querySelector(`[data-note="${CSS.escape(m.id)}"]`).textContent = T.copied;
+    try { await fb.fs.updateDoc(fb.fs.doc(fb.db, 'community', m.id), { copies: fb.fs.increment(1) }); } catch {}
+  } else if (report) {
+    const id = report.dataset.report;
+    const note = list.querySelector(`[data-note="${CSS.escape(id)}"]`);
+    if (!user) { note.textContent = T.report_login; return; }
+    const m = items.find((x) => x.id === id);
+    const count = (m.reportCount || 0) + 1;
+    try {
+      await fb.fs.updateDoc(fb.fs.doc(fb.db, 'community', id), { reportCount: count, reporters: fb.fs.arrayUnion(user.uid), visible: count < 5 });
+      note.textContent = T.reported;
+      report.disabled = true;
+    } catch { note.textContent = T.reported; report.disabled = true; }
+  }
+});
+
+$('cm-search').addEventListener('input', () => { shown = PAGE; render(); });
+$('cm-mine').addEventListener('change', () => { shown = PAGE; render(); });
+$('cm-more').addEventListener('click', () => { shown += PAGE; render(); });
+$('cm-login').addEventListener('click', async () => {
+  try { await fb.auth.signInWithPopup(fb.a, new fb.auth.GoogleAuthProvider()); } catch { $('cm-signed-out').append(' ' + T.login_error); }
+});
+$('cm-logout').addEventListener('click', () => fb.auth.signOut(fb.a));
+$('cm-form').addEventListener('submit', async (e) => {
+  e.preventDefault();
+  const f = e.target, note = $('cm-form-note');
+  const code = f.code.value.trim().replace(/\s+/g, '');
+  let macro;
+  try { macro = await decode(code); } catch { note.textContent = T.bad_code; return; }
+  try {
+    await fb.fs.addDoc(fb.fs.collection(fb.db, 'community'), {
+      name: f.name.value.trim().slice(0, 60), description: f.description.value.trim().slice(0, 500), code, lang: LANG,
+      author: f.author.value.trim().slice(0, 40), uid: user.uid, createdAt: fb.fs.serverTimestamp(),
+      triggers: macro.triggers.map((t) => String(t.type)).slice(0, 10), actions: macro.actions.map((a) => String(a.type)).slice(0, 30),
+      reportCount: 0, reporters: [], visible: true, copies: 0,
+    });
+    note.textContent = T.published;
+    f.reset();
+    f.author.value = (user.displayName || '').split(' ')[0].slice(0, 40);
+    load();
+  } catch (err) { console.warn(err); note.textContent = T.publish_error; }
+});
+
+$('cm-mine').closest('label').hidden = false;
+start();
+</script>
+<script>
+// gentle entrances as sections scroll into view; everything shows at once without this or with reduced motion
+(() => {
+  const els = document.querySelectorAll('.reveal');
+  if (!('IntersectionObserver' in window) || matchMedia('(prefers-reduced-motion: reduce)').matches) { els.forEach((e) => e.classList.add('in')); return; }
+  const io = new IntersectionObserver((list) => { for (const e of list) if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } }, { rootMargin: '0px 0px -6% 0px', threshold: 0.06 });
+  els.forEach((e) => io.observe(e));
+})();
+</script>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="about">
+      <a class="brand" href="./"><img src="../assets/icon-192.png" alt="" width="36" height="36">Pépouze</a>
+      <p>用“当…… 执行……”的简单规则，让手机自动运转。</p>
+    </div>
+    <div>
+      <h2>应用</h2>
+      <ul>
+        <li><a href="./#fonctionnement">使用方法</a></li>
+        <li><a href="./#exemples">示例</a></li>
+        <li><a href="communaute.html">社区</a></li>
+        <li><a href="./#tarifs">免费版或高级版</a></li>
+        <li><a href="./#questions">常见问题</a></li>
+      </ul>
+    </div>
+    <div>
+      <h2>你的数据</h2>
+      <ul>
+        <li><a href="confidentialite.html">隐私政策</a></li>
+        <li><a href="suppression-compte.html">删除我的账号</a></li>
+        <li><a href="mentions-legales.html">法律声明</a></li>
+      </ul>
+    </div>
+    <div>
+      <h2>联系我们</h2>
+      <ul>
+        <li><a href="mailto:pepouze.apk@gmail.com">pepouze.apk@gmail.com</a></li>
+        
+      </ul>
+    </div>
+    <p class="legal">© 2026 Pépouze. Google Play 是 Google LLC 的商标。本网站不使用 Cookie，也不做访问统计。</p>
+    <nav class="langs" aria-label="语言"><a href="../communaute.html" hreflang="fr" lang="fr">Français</a> <a href="../de/communaute.html" hreflang="de" lang="de">Deutsch</a> <a href="../en/communaute.html" hreflang="en" lang="en">English</a> <a href="../es/communaute.html" hreflang="es" lang="es">Español</a> <a href="../id/communaute.html" hreflang="id" lang="id">Bahasa Indonesia</a> <a href="../it/communaute.html" hreflang="it" lang="it">Italiano</a> <a href="../ja/communaute.html" hreflang="ja" lang="ja">日本語</a> <a href="../ko/communaute.html" hreflang="ko" lang="ko">한국어</a> <a href="../nl/communaute.html" hreflang="nl" lang="nl">Nederlands</a> <a href="../pl/communaute.html" hreflang="pl" lang="pl">Polski</a> <a href="../pt/communaute.html" hreflang="pt-BR" lang="pt-BR">Português</a> <a href="../tr/communaute.html" hreflang="tr" lang="tr">Türkçe</a> <span aria-current="true">简体中文</span></nav>
+  </div>
+</footer>
+</body>
+</html>

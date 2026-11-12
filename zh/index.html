@@ -1,0 +1,306 @@
+<!doctype html>
+<html lang="zh-Hans">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pépouze：Android 宏与自动化流程</title>
+<meta name="description" content="用“当…… 执行……”的简单规则，让 Android 手机自动运转：音量、勿扰、亮度、音乐、提醒……58 个现成示例。免费使用，高级版可选。">
+<link rel="canonical" href="https://j0lean.github.io/zh/">
+<meta name="theme-color" content="#050508">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="zh_CN">
+<link rel="alternate" hreflang="fr" href="https://j0lean.github.io/">
+<link rel="alternate" hreflang="de" href="https://j0lean.github.io/de/">
+<link rel="alternate" hreflang="en" href="https://j0lean.github.io/en/">
+<link rel="alternate" hreflang="es" href="https://j0lean.github.io/es/">
+<link rel="alternate" hreflang="id" href="https://j0lean.github.io/id/">
+<link rel="alternate" hreflang="it" href="https://j0lean.github.io/it/">
+<link rel="alternate" hreflang="ja" href="https://j0lean.github.io/ja/">
+<link rel="alternate" hreflang="ko" href="https://j0lean.github.io/ko/">
+<link rel="alternate" hreflang="nl" href="https://j0lean.github.io/nl/">
+<link rel="alternate" hreflang="pl" href="https://j0lean.github.io/pl/">
+<link rel="alternate" hreflang="pt-BR" href="https://j0lean.github.io/pt/">
+<link rel="alternate" hreflang="tr" href="https://j0lean.github.io/tr/">
+<link rel="alternate" hreflang="zh-Hans" href="https://j0lean.github.io/zh/">
+<link rel="alternate" hreflang="x-default" href="https://j0lean.github.io/en/">
+<meta property="og:site_name" content="Pépouze">
+<meta property="og:title" content="Pépouze：Android 宏与自动化流程">
+<meta property="og:description" content="用“当…… 执行……”的简单规则，让 Android 手机自动运转：音量、勿扰、亮度、音乐、提醒……58 个现成示例。免费使用，高级版可选。">
+<meta property="og:url" content="https://j0lean.github.io/zh/">
+<meta property="og:image" content="https://j0lean.github.io/assets/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="../favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="192x192" href="../assets/icon-192.png">
+<link rel="apple-touch-icon" href="../assets/apple-touch-icon.png">
+<link rel="preload" href="../assets/fonts/jakarta.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="../assets/fonts/archivo-expanded-black.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="../assets/site.css?v=4ec222e2">
+<script>document.documentElement.classList.add('js')</script>
+</head>
+<body>
+<a class="skip" href="#contenu">跳到正文</a>
+<div class="sky" aria-hidden="true"></div>
+
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="./" aria-label="Pépouze, 首页"><img src="../assets/icon-192.png" alt="" width="36" height="36">Pépouze</a>
+    <nav class="nav" aria-label="栏目">
+      <a href="./#fonctionnement">使用方法</a>
+      <a href="./#exemples">示例</a>
+      <a href="communaute.html">社区</a>
+      <a href="./#tarifs">价格</a>
+      <a href="./#questions">常见问题</a>
+    </nav>
+    <span class="btn btn-small btn-soon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v11m-5-5 5 5 5-5M5 19h14"/></svg><span class="long">即将登陆 </span>Google Play</span>
+  </div>
+</header>
+
+<main id="contenu">
+<section class="hero">
+  <div class="wrap">
+    <div>
+      <p class="eyebrow">Android 自动化</p>
+      <h1>你的日常，<span class="grad">开启自动驾驶。</span></h1>
+      <p class="lead">写一条简单的规则，“当…… 执行……”，手机就会在合适的时候自动搞定。</p>
+      <div class="actions">
+        <span class="btn btn-soon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v11m-5-5 5 5 5-5M5 19h14"/></svg>即将登陆 Google Play</span>
+        <a class="btn btn-glass" href="#exemples">查看示例</a>
+      </div>
+      <ul class="facts">
+        <li>Android 8 或更高版本</li>
+        <li>无需注册账号</li>
+        <li>高级版每月 2.99 欧元起，随时可取消</li>
+      </ul>
+    </div>
+    <div class="stage" aria-hidden="true">
+      <div class="phone"><img src="../assets/shots/accueil.webp" alt="" width="540" height="1200" fetchpriority="high"></div>
+      <div class="float f1"><span class="dot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></span><span><small>当……</small><b>23:00 时</b></span></div>
+      <div class="float f2"><span class="dot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 14.5A8 8 0 1 1 9.5 4a6.5 6.5 0 0 0 10.5 10.5z"/></svg></span><span><small>执行……</small><b>勿扰模式</b></span></div>
+      <div class="float f3"><span class="dot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg></span><span><small>安静之夜</small><b>宏已启用</b></span></div>
+    </div>
+  </div>
+</section>
+
+<section id="fonctionnement">
+  <div class="wrap split">
+    <div>
+      <div class="head reveal">
+        <p class="eyebrow">使用方法</p>
+        <h2>一条规则，轻松搞定。</h2>
+        <p class="lead">每个宏就是一句话。用三个模块拼起来，完全不用写代码。</p>
+      </div>
+      <div class="grid steps">
+        <article class="card reveal c-gold">
+          <span class="tag">1 · 当……</span>
+          <h3>启动宏的时机</h3>
+          <p>时间和日期、Wi-Fi、蓝牙、耳机、充电器、电量、屏幕亮起、某个应用打开……</p>
+          <span class="pill">11 种触发条件</span>
+        </article>
+        <article class="card reveal c-violet">
+          <span class="tag">2 · 执行……</span>
+          <h3>按顺序执行的操作</h3>
+          <p>音量、铃声、勿扰、亮度、手电筒、音乐、闹钟、计时器、通知、朗读文字、打开应用或链接、点按屏幕上的文字……</p>
+          <span class="pill">29 种操作，自由组合</span>
+        </article>
+        <article class="card reveal c-cyan">
+          <span class="tag">3 · 仅当……（可选）</span>
+          <h3>需要时，再加条件</h3>
+          <p>时间段、星期几、电量、手机是否在充电。</p>
+        </article>
+      </div>
+    </div>
+    <figure class="shot reveal"><div class="phone"><img src="../assets/shots/editeur.webp" alt="Pépouze 的宏编辑器：设置了电量的“当……”模块，下面是列出各个步骤的“执行……”模块" width="540" height="1200" loading="lazy"></div></figure>
+  </div>
+</section>
+
+<section id="exemples">
+  <div class="wrap">
+    <div class="head reveal">
+      <p class="eyebrow">示例</p>
+      <h2>58 个现成的宏。</h2>
+      <p class="lead">复制一个示例，稍作调整，就搞定了。下面是其中几个。</p>
+    </div>
+    <div class="grid g2">
+      <article class="card ex reveal c-blue"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 17v-4l2.2-5.2A2 2 0 0 1 8 6.5h8a2 2 0 0 1 1.8 1.3L20 13v4H4z"/><path d="M4 13h16"/><circle cx="8" cy="17" r="1.6"/><circle cx="16" cy="17" r="1.6"/></svg></span><div><h3>驾车模式</h3><p><span class="when">车载蓝牙一连上，</span>音量就调高，音乐继续播放。</p></div></article>
+      <article class="card ex reveal c-violet"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 14.5A8 8 0 1 1 9.5 4a6.5 6.5 0 0 0 10.5 10.5z"/></svg></span><div><h3>安静之夜</h3><p><span class="when">晚上 11 点，</span>勿扰模式开启，亮度调到最低，音乐停止。</p></div></article>
+      <article class="card ex reveal c-mint"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="7" y="5" width="10" height="16" rx="2.5"/><path d="M10 2.5h4M10 16h4"/></svg></span><div><h3>省电模式</h3><p><span class="when">电量低于 20% 时，</span>屏幕调暗，并更快进入休眠。</p></div></article>
+      <article class="card ex reveal c-pink"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 15v-3a8 8 0 0 1 16 0v3"/><rect x="3" y="14" width="4.5" height="7" rx="1.6"/><rect x="16.5" y="14" width="4.5" height="7" rx="1.6"/></svg></span><div><h3>耳机 = 音乐</h3><p><span class="when">插上耳机时，</span>以柔和的音量开始播放。</p></div></article>
+      <article class="card ex reveal c-orange"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 2.5v5M15 2.5v5M6 7.5h12v3.5a6 6 0 0 1-12 0V7.5zM12 17v4.5"/></svg></span><div><h3>早安</h3><p><span class="when">早上拔下充电器时，</span>手机会为你播报时间和电量。</p></div></article>
+      <article class="card ex reveal c-gold"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 16v-5a6 6 0 0 1 12 0v5l2 2H4z"/><path d="M10 20.5a2 2 0 0 0 4 0"/></svg></span><div><h3>该睡觉了</h3><p><span class="when">周日到周四晚上 10:30，</span>温柔提醒你放下手机，屏幕也随之调暗。</p></div></article>
+    </div>
+    <ul class="chips reveal" aria-label="示例的 11 个类别">
+      <li>夜晚与睡眠</li><li>早晨</li><li>工作与学习</li><li>驾车与通勤</li><li>电池与充电</li><li>音乐与声音</li><li>屏幕与视频</li><li>应用与社交网络</li><li>提醒与健康</li><li>居家</li><li>快捷方式</li>
+    </ul>
+  </div>
+</section>
+
+<section id="nova">
+  <div class="wrap split flip">
+    <figure class="shot reveal"><div class="phone"><img src="../assets/shots/ia-proposition.webp" alt="Pépouze 根据一句话准备好了“耳机音乐”宏：当……插入耳机，执行……媒体音量调到 60% 后开始播放" width="540" height="1200" loading="lazy"></div></figure>
+    <div class="reveal">
+      <p class="eyebrow">Pépouze，你的助手</p>
+      <h2>说出来，Pépouze 帮你准备好。</h2>
+      <p class="lead">用一句话描述你想要的效果。Pépouze 准备好宏，你检查一下，然后保存。</p>
+      <p class="bubble"><small>你</small>“插上耳机时，把音乐开到 60%”</p>
+      <ul class="ticks">
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg><span><b>未经你同意，什么都不会启用：</b>保存前，你会检查每一个宏。</span></li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg><span><b>Pépouze 在手机本地运行：</b>你说的话不会被发送到任何地方。</span></li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg><span><b>对于更复杂的需求，</b>你也可以用自己的密钥连接 Claude，全凭你决定。</span></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="controle">
+  <div class="wrap split">
+    <div>
+      <div class="head reveal">
+        <p class="eyebrow">一切由你掌控</p>
+        <h2>一切看得见，一切有解释。</h2>
+      </div>
+      <div class="grid g2">
+        <article class="card reveal c-mint"><span class="num"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3.5 12a8.5 8.5 0 1 0 2.6-6.1L3.5 8.5"/><path d="M3.5 3.5v5h5"/><path d="M12 7.5V12l3 2"/></svg></span><h3>运行记录</h3><p>每次运行都会被记录：是否成功，以及是什么触发了它。</p></article>
+        <article class="card reveal c-gold"><span class="num"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3 5 6v6c0 4.4 3 7.6 7 9 4-1.4 7-4.6 7-9V6l-7-3z"/><path d="m9 12 2 2 4-4"/></svg></span><h3>在需要时才请求权限</h3><p>只有当某个宏需要时，才会请求相应权限，并附上说明。</p></article>
+        <article class="card reveal c-blue"><span class="num"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 18.5h10a4 4 0 0 0 .6-7.95A6 6 0 0 0 6.1 10 4.3 4.3 0 0 0 7 18.5z"/></svg></span><h3>备份</h3><p>备份到 Google 云端硬盘或手机，无需账号；有账号的话，也可以在线备份。</p></article>
+        <article class="card reveal c-pink"><span class="num"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="11" width="14" height="10" rx="2.5"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg></span><h3>你的数据留在你身边</h3><p>你的宏保存在你的手机上。没有访问统计，绝不出售任何数据。</p></article>
+      </div>
+    </div>
+    <figure class="shot reveal"><div class="phone"><img src="../assets/shots/historique.webp" alt="Pépouze 的运行记录：驾车模式、耳机 = 音乐、安静之夜和省电模式，附有时间和触发原因" width="540" height="1200" loading="lazy"></div></figure>
+  </div>
+</section>
+
+<section id="tarifs">
+  <div class="wrap">
+    <div class="head reveal">
+      <p class="eyebrow">价格</p>
+      <h2>免费使用，或每月 2.99 欧元起享受无广告。</h2>
+      <p class="lead">以上为法国价格。订阅可随时在 Google Play 中取消。</p>
+    </div>
+    <div class="grid g2">
+      <article class="card price reveal c-blue">
+        <span class="tag">免费版</span>
+        <p class="amount">€0</p>
+        <p>适合初次体验，把最常用的事自动化。</p>
+        <ul>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg><span>最多 5 个宏</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg><span>全部功能、58 个示例和 Pépouze</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg><span>只在创建宏时播放一段简短广告</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg><span>已有的宏绝不会被锁定</span></li>
+        </ul>
+      </article>
+      <article class="card price best reveal c-violet">
+        <span class="tag">高级版</span>
+        <p class="amount">€2.99<span class="per">/月</span></p>
+        <p>或每年 24.99 欧元。7 天免费试用，随时可取消。</p>
+        <ul>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg><span>无限数量的宏</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg><span>没有任何广告</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg><span>使用同一个 Google 账号，在你的其他手机上也能用</span></li>
+        </ul>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="questions">
+  <div class="wrap">
+    <div class="head reveal">
+      <p class="eyebrow">常见问题</p>
+      <h2>大家常问的问题。</h2>
+    </div>
+    <div class="faq">
+      <details>
+        <summary>Pépouze 为什么要使用无障碍服务？</summary>
+        <div>
+          <p>只为了完成你添加到宏里的操作：点按屏幕上的文字、按返回或主屏幕键、锁屏、截屏、得知哪个应用被打开。</p>
+          <p>屏幕上的文字只用于找到要点按的那一处，任何内容都不会离开手机。Pépouze 只按照你写好的规则行事。这项服务只有在专门的说明之后、经你同意才会开启，你也可以随时关闭。</p>
+        </div>
+      </details>
+      <details>
+        <summary>需要注册账号吗？</summary>
+        <div><p>不需要。账号只用于在线备份你的宏。你也可以把宏备份到文件中，存在 Google 云端硬盘或手机上，完全不需要账号。</p></div>
+      </details>
+      <details>
+        <summary>屏幕关闭时，宏还能运行吗？</summary>
+        <div><p>可以，大多数都能：Pépouze 会在后台监听事件。为了不让 Android 让它进入休眠，请在 Android 设置的应用信息页中选择“电池：不受限制”。涉及屏幕操作的动作需要手机处于解锁状态。</p></div>
+      </details>
+      <details>
+        <summary>Pépouze 会替我发送短信吗？</summary>
+        <div><p>不会。“准备短信”操作会打开你的短信应用，并填好号码和内容：点按“发送”的是你自己。</p></div>
+      </details>
+      <details>
+        <summary>如何取消订阅？</summary>
+        <div><p>在 Pépouze 中打开“我的账号”，然后选择“管理或取消订阅”；也可以前往 Google Play →“付款和订阅”。在已付费期限结束前，你仍可使用高级版，之后 Pépouze 会恢复为免费版：你的宏全都还在。</p></div>
+      </details>
+      <details>
+        <summary>换了新手机，怎样找回我的订阅？</summary>
+        <div><p>使用同一个 Google 账号安装 Pépouze：打开应用时会自动恢复你的订阅。如果没有恢复，请在“我的账号”中点按“恢复购买”。</p></div>
+      </details>
+      <details>
+        <summary>如何删除我的账号和数据？</summary>
+        <div><p>在应用中：我的账号 → 删除我的账号。不使用应用的话，请查看<a href="suppression-compte.html">账号删除页面</a>。</p></div>
+      </details>
+    </div>
+  </div>
+</section>
+
+<section class="end">
+  <div class="wrap">
+    <div class="card reveal">
+      <img src="../assets/icon-192.png" alt="" width="88" height="88">
+      <h2>什么都能自动化。<span class="grad">连好习惯也不例外。</span></h2>
+      <p class="lead" style="margin: 0 auto">Android 上免费使用，高级版可选。</p>
+      <div class="actions"><span class="btn btn-soon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v11m-5-5 5 5 5-5M5 19h14"/></svg>即将登陆 Google Play</span></div>
+    </div>
+  </div>
+</section>
+<script>
+// gentle entrances as sections scroll into view; everything shows at once without this or with reduced motion
+(() => {
+  const els = document.querySelectorAll('.reveal');
+  if (!('IntersectionObserver' in window) || matchMedia('(prefers-reduced-motion: reduce)').matches) { els.forEach((e) => e.classList.add('in')); return; }
+  const io = new IntersectionObserver((list) => { for (const e of list) if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } }, { rootMargin: '0px 0px -6% 0px', threshold: 0.06 });
+  els.forEach((e) => io.observe(e));
+})();
+</script>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="about">
+      <a class="brand" href="./"><img src="../assets/icon-192.png" alt="" width="36" height="36">Pépouze</a>
+      <p>用“当…… 执行……”的简单规则，让手机自动运转。</p>
+    </div>
+    <div>
+      <h2>应用</h2>
+      <ul>
+        <li><a href="./#fonctionnement">使用方法</a></li>
+        <li><a href="./#exemples">示例</a></li>
+        <li><a href="communaute.html">社区</a></li>
+        <li><a href="./#tarifs">免费版或高级版</a></li>
+        <li><a href="./#questions">常见问题</a></li>
+      </ul>
+    </div>
+    <div>
+      <h2>你的数据</h2>
+      <ul>
+        <li><a href="confidentialite.html">隐私政策</a></li>
+        <li><a href="suppression-compte.html">删除我的账号</a></li>
+        <li><a href="mentions-legales.html">法律声明</a></li>
+      </ul>
+    </div>
+    <div>
+      <h2>联系我们</h2>
+      <ul>
+        <li><a href="mailto:pepouze.apk@gmail.com">pepouze.apk@gmail.com</a></li>
+        
+      </ul>
+    </div>
+    <p class="legal">© 2026 Pépouze. Google Play 是 Google LLC 的商标。本网站不使用 Cookie，也不做访问统计。</p>
+    <nav class="langs" aria-label="语言"><a href=".././" hreflang="fr" lang="fr">Français</a> <a href="../de/./" hreflang="de" lang="de">Deutsch</a> <a href="../en/./" hreflang="en" lang="en">English</a> <a href="../es/./" hreflang="es" lang="es">Español</a> <a href="../id/./" hreflang="id" lang="id">Bahasa Indonesia</a> <a href="../it/./" hreflang="it" lang="it">Italiano</a> <a href="../ja/./" hreflang="ja" lang="ja">日本語</a> <a href="../ko/./" hreflang="ko" lang="ko">한국어</a> <a href="../nl/./" hreflang="nl" lang="nl">Nederlands</a> <a href="../pl/./" hreflang="pl" lang="pl">Polski</a> <a href="../pt/./" hreflang="pt-BR" lang="pt-BR">Português</a> <a href="../tr/./" hreflang="tr" lang="tr">Türkçe</a> <span aria-current="true">简体中文</span></nav>
+  </div>
+</footer>
+</body>
+</html>
