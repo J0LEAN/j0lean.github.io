@@ -36,7 +36,7 @@
 <link rel="apple-touch-icon" href="../assets/apple-touch-icon.png">
 <link rel="preload" href="../assets/fonts/jakarta.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="../assets/fonts/archivo-expanded-black.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="../assets/site.css?v=586fb2ce">
+<link rel="stylesheet" href="../assets/site.css?v=f22f5bf9">
 <script>document.documentElement.classList.add('js');document.addEventListener('click',(e)=>{const m=document.querySelector('.lang-menu[open]');if(m&&!m.contains(e.target))m.removeAttribute('open')})</script>
 </head>
 <body>
@@ -265,6 +265,40 @@ $('cm-form').addEventListener('submit', async (e) => {
 
 $('cm-mine').closest('label').hidden = false;
 start();
+
+/** A macro opened from a QR code or a link: communaute.html#PZ1.… shows it first. */
+async function showShared() {
+  const code = decodeURIComponent(location.hash.slice(1)).match(/PZ1\.[A-Za-z0-9_-]+/)?.[0];
+  if (!code) return;
+  // The visitor's own language, when the site has it.
+  const langs = [...document.querySelectorAll('link[rel=alternate][hreflang]')].map((l) => [l.hreflang.toLowerCase(), l.href]);
+  const want = (navigator.language || '').toLowerCase();
+  const match = langs.find(([h]) => h !== 'x-default' && want.startsWith(h.split('-')[0]) && h.split('-')[0] !== document.documentElement.lang.toLowerCase().split('-')[0]);
+  if (match && !sessionStorage.getItem('pz-lang')) { try { sessionStorage.setItem('pz-lang', '1'); } catch {} location.replace(match[1] + location.hash); return; }
+  let macro;
+  try { macro = await decode(code); } catch { return; }
+  const box = document.createElement('article');
+  box.className = 'card cm-item cm-shared';
+  const triggers = macro.triggers.map((t) => String(t.type)), actions = macro.actions.map((a) => String(a.type));
+  box.innerHTML = `
+    <h3>${esc(macro.name)}</h3>
+    <p class="cm-flow"><span class="cm-k">${esc(T.when)}</span> ${triggers.map((t) => `<span class="cm-chip">${esc(label(t))}</span>`).join(' ')}
+      <br><span class="cm-k">${esc(T.do)}</span> ${actions.map((a) => `<span class="cm-chip${SENSITIVE.has(a) ? ' warn' : ''}">${esc(label(a))}</span>`).join(' ')}</p>
+    ${actions.some((a) => SENSITIVE.has(a)) ? `<p class="cm-small warn">${esc(T.careful)}</p>` : ''}
+    <p class="cm-actions">
+      <a class="btn btn-cta btn-small" href="pepouze://import?code=${encodeURIComponent(code)}">${esc(T.open)}</a>
+      <button class="btn btn-glass btn-small" id="cm-shared-copy">${esc(T.copy)}</button>
+    </p>
+    <p class="cm-small" id="cm-shared-note" aria-live="polite"></p>`;
+  document.querySelector('.cm-tools').before(box);
+  document.getElementById('cm-shared-copy').addEventListener('click', async () => {
+    try { await navigator.clipboard.writeText(code); } catch {}
+    document.getElementById('cm-shared-note').textContent = T.copied;
+  });
+  box.scrollIntoView({ block: 'start' });
+}
+showShared();
+
 </script>
 <script>
 // gentle entrances as sections scroll into view; everything shows at once without this or with reduced motion
