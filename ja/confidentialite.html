@@ -31,11 +31,6 @@
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
-<meta property="og:image:alt" content="プライバシーポリシー · Pépouze">
-<meta name="twitter:title" content="プライバシーポリシー · Pépouze">
-<meta name="twitter:description" content="Pépouze が使うデータとその理由、そしてあなたが管理できること。スマホ内のマクロ、任意のアカウント、権限について。">
-<meta name="twitter:image" content="https://j0lean.github.io/assets/og.jpg">
-<meta name="twitter:image:alt" content="プライバシーポリシー · Pépouze">
 <link rel="icon" href="../favicon.ico" sizes="any">
 <link rel="icon" type="image/png" sizes="192x192" href="../assets/icon-192.png">
 <link rel="apple-touch-icon" href="../assets/apple-touch-icon.png">
@@ -84,7 +79,7 @@
 <ul><li><strong>Firebase Authentication</strong>：メールアドレスと名前（入力した場合）、または「Google で続行」を選んだ場合は Google アカウント。</li><li><strong>Cloud Firestore</strong>：マクロのコピー、バックアップの日付、バックアップしたスマホの機種。</li></ul>
 <p>これらのデータには、あなたのアカウントでしかアクセスできません。ログアウトすることも、マイアカウント → アカウントを削除 から、アカウントとそのバックアップを削除することもできます。Google はこれらのデータを、自社のポリシーに従って取り扱います：<a href="https://firebase.google.com/support/privacy">https://firebase.google.com/support/privacy</a></p>
 <h2 id="ai-でモジュールを作る">AI でモジュールを作る</h2>
-<ul><li><strong>Pépouze</strong>（標準）は、すべてスマホの中で動作します。何も送信されません。</li><li><strong>ご自身の API キーを使った Claude</strong>（任意）：あなたの同意のあと、モジュールを準備するために、あなたのリクエストとマクロの名前が Anthropic に送信されます。Anthropic のポリシー：<a href="https://www.anthropic.com/legal/privacy">https://www.anthropic.com/legal/privacy</a></li><li><strong>キーなしの Claude または ChatGPT</strong>：Pépouze はあなたのリクエストとマクロの名前をクリップボードにコピーします。それを好きなアプリに貼り付けるのはあなたです。アプリに戻ると、Pépouze はクリップボードを読み取り、回答、またはコピーしたばかりの API キーを取り込みます（取り込んだあとはクリップボードから消去します）。</li><li><strong>フランス語以外の言語の理解</strong>：ほかの言語で書かれたリクエストを読むため、Pépouze は Google の翻訳モデル（ML Kit）を一度だけダウンロードし、その後はスマホの中で翻訳します。リクエストが送信されることはありません。</li></ul>
+<ul><li><strong>Pépouze</strong>（標準）は、すべてスマホの中で動作します。何も送信されません。</li><li><strong>ご自身の API キーを使った Claude</strong>（任意）：あなたの同意のあと、モジュールを準備するために、あなたのリクエストとマクロの名前が Anthropic に送信されます。Anthropic のポリシー：<a href="https://www.anthropic.com/legal/privacy">https://www.anthropic.com/legal/privacy</a></li><li><strong>キーなしの ChatGPT または Claude</strong>：Pépouze は ChatGPT または Claude のアプリ（またはそのウェブサイト）を開き、あなたのリクエストとマクロの名前を送信できる状態で用意し、クリップボードにもコピーします。送信するのはあなたです。アプリに戻ると、Pépouze はクリップボードを読み取り、回答、またはコピーしたばかりの API キーを取り込みます（取り込んだあとはクリップボードから消去します）。</li><li><strong>フランス語以外の言語の理解</strong>：ほかの言語で書かれたリクエストを読むため、Pépouze は Google の翻訳モデル（ML Kit）を一度だけダウンロードし、その後はスマホの中で翻訳します。リクエストが送信されることはありません。</li></ul>
 <h2 id="権限">権限</h2>
 <p>初回起動時、Pépouze が求めるのは必要最低限の権限（通知とユーザー補助サービス）だけで、そのほかの権限は説明とともにご紹介します。それ以外の権限は、あなたのマクロが必要とするときにだけ、説明付きでリクエストされます。権限が必要なマクロは、その権限を許可するまで有効になりません。また、権限は Android の設定でいつでも取り消せます。</p>
 <ul><li><strong>通知</strong>：マクロからの通知を表示するため。</li><li><strong>アラームとリマインダー</strong>：時刻指定のマクロを分単位で正確に実行するため。</li><li><strong>バッテリーの制限なし</strong>：Android に Pépouze をスリープさせないため。Android の設定のアプリ情報ページで、ご自身で選択します。</li><li><strong>「おやすみモード」へのアクセス</strong>：このモードを切り替えたり、着信音をサイレントにしたりするため。</li><li><strong>システム設定の変更</strong>：画面の明るさ、消灯までの時間、回転を変更するため。</li><li><strong>付近のデバイス</strong>：Bluetooth デバイスが接続されたことを知るため。</li><li><strong>電話</strong>：マクロで指定した番号に発信するため。</li><li><strong>ユーザー補助サービス</strong>：次のセクションをご覧ください。</li><li><strong>インターネット</strong>：オンラインバックアップ、Claude、マクロのウェブリクエストのため。通信は https のみです。</li></ul>

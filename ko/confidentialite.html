@@ -31,11 +31,6 @@
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
-<meta property="og:image:alt" content="개인정보 처리방침 · Pépouze">
-<meta name="twitter:title" content="개인정보 처리방침 · Pépouze">
-<meta name="twitter:description" content="Pépouze가 어떤 데이터를 왜 사용하는지, 그리고 여러분이 직접 관리할 수 있는 것: 휴대폰 속 매크로, 선택 사항인 계정, 권한.">
-<meta name="twitter:image" content="https://j0lean.github.io/assets/og.jpg">
-<meta name="twitter:image:alt" content="개인정보 처리방침 · Pépouze">
 <link rel="icon" href="../favicon.ico" sizes="any">
 <link rel="icon" type="image/png" sizes="192x192" href="../assets/icon-192.png">
 <link rel="apple-touch-icon" href="../assets/apple-touch-icon.png">
@@ -84,7 +79,7 @@
 <ul><li><strong>Firebase Authentication</strong>: 이메일 주소와 이름(입력한 경우), 또는 ‘Google로 계속하기’를 선택한 경우 Google 계정.</li><li><strong>Cloud Firestore</strong>: 매크로 사본, 백업 날짜, 백업한 휴대폰의 기종.</li></ul>
 <p>이 데이터는 여러분의 계정으로만 접근할 수 있습니다. 로그아웃하거나, 내 계정 → 계정 삭제에서 계정과 백업을 삭제할 수 있습니다. Google은 자체 정책에 따라 이 데이터를 처리합니다: <a href="https://firebase.google.com/support/privacy">https://firebase.google.com/support/privacy</a></p>
 <h2 id="ai로-모듈-만들기">AI로 모듈 만들기</h2>
-<ul><li><strong>Pépouze</strong>(기본값)는 전적으로 휴대폰 안에서 작동합니다. 아무것도 전송되지 않습니다.</li><li><strong>본인의 API 키를 사용하는 Claude</strong>(선택): 여러분이 동의한 뒤, 모듈을 준비하기 위해 요청 내용과 매크로 이름이 Anthropic으로 전송됩니다. Anthropic 정책: <a href="https://www.anthropic.com/legal/privacy">https://www.anthropic.com/legal/privacy</a></li><li><strong>키 없이 Claude 또는 ChatGPT 사용</strong>: Pépouze가 요청 내용과 매크로 이름을 클립보드에 복사하고, 원하는 앱에 붙여 넣는 것은 여러분입니다. 돌아오면 Pépouze가 클립보드를 읽어 답변이나 방금 복사한 API 키를 가져옵니다(가져온 뒤에는 클립보드에서 지웁니다).</li><li><strong>프랑스어 외의 언어 이해</strong>: 다른 언어로 쓴 요청을 읽기 위해 Pépouze는 Google 번역 모델(ML Kit)을 한 번만 내려받고, 이후에는 휴대폰에서 번역해요. 요청은 절대 전송되지 않아요.</li></ul>
+<ul><li><strong>Pépouze</strong>(기본값)는 전적으로 휴대폰 안에서 작동합니다. 아무것도 전송되지 않습니다.</li><li><strong>본인의 API 키를 사용하는 Claude</strong>(선택): 여러분이 동의한 뒤, 모듈을 준비하기 위해 요청 내용과 매크로 이름이 Anthropic으로 전송됩니다. Anthropic 정책: <a href="https://www.anthropic.com/legal/privacy">https://www.anthropic.com/legal/privacy</a></li><li><strong>키 없이 ChatGPT 또는 Claude 사용</strong>: Pépouze가 ChatGPT 또는 Claude 앱(또는 웹사이트)을 열어 요청 내용과 매크로 이름을 보낼 준비가 된 상태로 넣어 두고, 클립보드에도 복사합니다. 보내는 것은 여러분입니다. 돌아오면 Pépouze가 클립보드를 읽어 답변이나 방금 복사한 API 키를 가져옵니다(가져온 뒤에는 클립보드에서 지웁니다).</li><li><strong>프랑스어 외의 언어 이해</strong>: 다른 언어로 쓴 요청을 읽기 위해 Pépouze는 Google 번역 모델(ML Kit)을 한 번만 내려받고, 이후에는 휴대폰에서 번역해요. 요청은 절대 전송되지 않아요.</li></ul>
 <h2 id="권한">권한</h2>
 <p>처음 실행할 때 Pépouze는 꼭 필요한 권한(알림과 접근성 서비스)만 요청하고, 나머지 권한은 설명과 함께 소개합니다. 그 밖의 권한은 매크로에 필요할 때만 설명과 함께 요청합니다. 권한이 필요한 매크로는 그 권한을 허용하기 전까지 켜지지 않으며, 권한은 Android 설정에서 언제든지 철회할 수 있습니다.</p>
 <ul><li><strong>알림</strong>: 매크로의 알림을 표시합니다.</li><li><strong>알람 및 리마인더</strong>: 시간 기반 매크로를 분 단위까지 정확하게 실행합니다.</li><li><strong>배터리 제한 없음</strong>: Android가 Pépouze를 절전 상태로 만들지 않도록 합니다. Android 설정의 앱 정보 페이지에서 직접 선택합니다.</li><li><strong>‘방해 금지’ 접근</strong>: 이 모드를 바꾸고 벨소리를 무음으로 전환합니다.</li><li><strong>시스템 설정 수정</strong>: 화면 밝기, 화면 꺼짐 시간, 화면 회전을 바꿉니다.</li><li><strong>근처 기기</strong>: 블루투스 기기가 연결되는 순간을 알아냅니다.</li><li><strong>전화</strong>: 매크로에서 지정한 번호로 전화를 겁니다.</li><li><strong>접근성 서비스</strong>: 다음 섹션을 참고하세요.</li><li><strong>인터넷</strong>: 온라인 백업, Claude, 매크로의 웹 요청에 사용하며, https로만 통신합니다.</li></ul>

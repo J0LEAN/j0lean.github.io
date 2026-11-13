@@ -31,11 +31,6 @@
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
-<meta property="og:image:alt" content="隐私政策 · Pépouze">
-<meta name="twitter:title" content="隐私政策 · Pépouze">
-<meta name="twitter:description" content="Pépouze 使用哪些数据、为什么使用，以及你能掌控什么：手机上的宏、可选账号、权限。">
-<meta name="twitter:image" content="https://j0lean.github.io/assets/og.jpg">
-<meta name="twitter:image:alt" content="隐私政策 · Pépouze">
 <link rel="icon" href="../favicon.ico" sizes="any">
 <link rel="icon" type="image/png" sizes="192x192" href="../assets/icon-192.png">
 <link rel="apple-touch-icon" href="../assets/apple-touch-icon.png">
@@ -84,7 +79,7 @@
 <ul><li><strong>Firebase Authentication</strong>：你的电子邮件地址和你的名字（如果你提供），或者在你选择“通过 Google 继续”时使用你的 Google 账号。</li><li><strong>Cloud Firestore</strong>：你的宏的副本、备份日期，以及进行备份的手机型号。</li></ul>
 <p>只有通过你的账号才能访问这些数据。你可以退出登录，也可以在“我的账号 → 删除我的账号”中删除账号及其备份。Google 会按照其政策处理这些数据：<a href="https://firebase.google.com/support/privacy">https://firebase.google.com/support/privacy</a></p>
 <h2 id="用-ai-创建模块">用 AI 创建模块</h2>
-<ul><li><strong>Pépouze</strong>（默认）完全在手机上运行：不会发送任何内容。</li><li><strong>使用你自己 API 密钥的 Claude</strong>（可选）：在你同意之后，你的请求和你的宏的名称会被发送给 Anthropic，用于准备模块。Anthropic 的政策：<a href="https://www.anthropic.com/legal/privacy">https://www.anthropic.com/legal/privacy</a></li><li><strong>不使用密钥的 Claude 或 ChatGPT</strong>：Pépouze 会把你的请求和你的宏的名称复制到剪贴板；由你自己把它们粘贴到你选择的应用中。你返回时，Pépouze 会读取剪贴板，以导入回复，或导入你刚刚复制的 API 密钥（导入后会将其从剪贴板清除）。</li><li><strong>理解法语以外的语言</strong>：为了读懂用其他语言写的请求，Pépouze 会一次性下载 Google 的翻译模型（ML Kit），之后在手机上完成翻译。你的请求绝不会被发送。</li></ul>
+<ul><li><strong>Pépouze</strong>（默认）完全在手机上运行：不会发送任何内容。</li><li><strong>使用你自己 API 密钥的 Claude</strong>（可选）：在你同意之后，你的请求和你的宏的名称会被发送给 Anthropic，用于准备模块。Anthropic 的政策：<a href="https://www.anthropic.com/legal/privacy">https://www.anthropic.com/legal/privacy</a></li><li><strong>不使用密钥的 ChatGPT 或 Claude</strong>：Pépouze 会打开 ChatGPT 或 Claude 应用（或其网站），把你的请求和你的宏的名称准备好待发送，并同时复制到剪贴板；由你自己发送。你返回时，Pépouze 会读取剪贴板，以导入回复，或导入你刚刚复制的 API 密钥（导入后会将其从剪贴板清除）。</li><li><strong>理解法语以外的语言</strong>：为了读懂用其他语言写的请求，Pépouze 会一次性下载 Google 的翻译模型（ML Kit），之后在手机上完成翻译。你的请求绝不会被发送。</li></ul>
 <h2 id="权限">权限</h2>
 <p>首次启动时，Pépouze 只请求必要的权限（通知和无障碍服务），并介绍其他权限及其用途。其他权限只有在你的某个宏需要时，才会附带说明向你请求。需要某项权限的宏，在你授予该权限之前不会启用；你也可以随时在 Android 设置中撤销任何权限。</p>
 <ul><li><strong>通知</strong>：显示你的宏发出的通知。</li><li><strong>闹钟和提醒</strong>：让定时宏精确到分钟触发。</li><li><strong>电池不受限制</strong>：避免 Android 让 Pépouze 进入休眠；由你自己在 Android 设置的应用信息页中选择。</li><li><strong>“勿扰”权限</strong>：切换此模式，并将铃声设为静音。</li><li><strong>修改系统设置</strong>：调整屏幕亮度、休眠时间和旋转。</li><li><strong>附近的设备</strong>：得知蓝牙设备何时连接。</li><li><strong>电话</strong>：拨打宏中指定的号码。</li><li><strong>无障碍服务</strong>：见下一节。</li><li><strong>网络</strong>：用于在线备份、Claude 和宏中的网络请求，仅使用 https。</li></ul>
