@@ -116,7 +116,10 @@ h3 { font: 800 21px/1.25 var(--body); }
 .f2 { top: 42%; right: max(0px, calc(50% - 250px)); --c1: #3d7bff; --c2: #b9a4ff; }
 .f3 { bottom: 10%; left: max(0px, calc(50% - 235px)); --c1: #1fd68a; --c2: #8cf7c2; }
 .f1 { top: 20%; }
-@media (max-width: 520px) { .float { padding: 9px 12px; } .float .dot { width: 32px; height: 32px; } .f1 { left: 0; top: 24%; } .f2 { right: 0; top: 50%; } .f3 { left: 4px; } }
+/* The badges sit beside the phone, never over its screen: further out on wide screens, only one on phones. */
+@media (min-width: 861px) { .f1 { left: max(0px, calc(50% - 300px)); } .f2 { right: max(0px, calc(50% - 300px)); } .f3 { left: max(0px, calc(50% - 290px)); } }
+@media (max-width: 860px) { .f2, .f3 { display: none; } }
+@media (max-width: 520px) { .float { display: none; } }
 
 /* ---------- sections ---------- */
 section { padding: clamp(56px, 8vw, 104px) 0; }
