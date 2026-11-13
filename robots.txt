@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://j0lean.github.io/sitemap.xml
+Sitemap: https://pepouzeapp.com/sitemap.xml
