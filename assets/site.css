@@ -287,3 +287,90 @@ footer .legal { grid-column: 1 / -1; margin-top: 12px; padding-top: 20px; border
 .price-one { max-width: 560px; }
 .end .tester { color: var(--soft); max-width: 520px; margin: 14px auto 0; }
 .num svg { width: 24px; height: 24px; }
+
+/* ---------- motion (only for visitors who have not asked to reduce it) ---------- */
+.reveal { --dl: calc(var(--i, 0) * 80ms); }
+.js .reveal { transition-delay: var(--dl); }
+.js .card.reveal { transition: opacity 0.7s ease var(--dl), transform 0.7s ease var(--dl), translate 0.35s ease, box-shadow 0.35s ease; }
+.count { font-variant-numeric: tabular-nums; }
+.typed { white-space: pre-wrap; }
+.sr { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+.card::after { content: ""; position: absolute; inset: 0; pointer-events: none; opacity: 0; transition: opacity 0.35s ease;
+  background: radial-gradient(320px circle at var(--mx, 50%) var(--my, 50%), rgba(185, 164, 255, 0.16), transparent 62%); }
+
+@media (prefers-reduced-motion: no-preference) {
+  html { scroll-behavior: smooth; }
+
+  /* the night sky slowly drifts */
+  .sky::before, .sky::after { content: ""; position: absolute; width: 70vmax; height: 70vmax; border-radius: 50%; will-change: translate; }
+  .sky::before { top: -20vmax; left: -15vmax; background: radial-gradient(circle, rgba(124, 92, 255, 0.2), transparent 62%); animation: drift-a 28s ease-in-out infinite alternate; }
+  .sky::after { bottom: -25vmax; right: -20vmax; background: radial-gradient(circle, rgba(61, 123, 255, 0.18), transparent 62%); animation: drift-b 34s ease-in-out infinite alternate; }
+  @keyframes drift-a { to { translate: 22vw 18vh; } }
+  @keyframes drift-b { to { translate: -24vw -16vh; } }
+
+  /* hero: the words arrive one after the other, the phone floats, the cards pop in and bob */
+  .js .hero .wrap > div:first-child > * { animation: rise 0.8s cubic-bezier(0.2, 0.8, 0.2, 1) both; }
+  .js .hero .wrap > div:first-child > :nth-child(2) { animation-delay: 0.08s; }
+  .js .hero .wrap > div:first-child > :nth-child(3) { animation-delay: 0.18s; }
+  .js .hero .wrap > div:first-child > :nth-child(4) { animation-delay: 0.28s; }
+  .js .hero .wrap > div:first-child > :nth-child(5) { animation-delay: 0.38s; }
+  .js .hero h1 { animation-name: rise-keep; }
+  @keyframes rise { from { opacity: 0; translate: 0 22px; } }
+  @keyframes rise-keep { from { translate: 0 22px; } }
+  .stage .phone { animation: bob 7s ease-in-out infinite; }
+  .js .stage .phone { animation: phone-in 1s cubic-bezier(0.2, 0.8, 0.2, 1) both, bob 7s ease-in-out 1s infinite; }
+  .float { animation: pop 0.7s cubic-bezier(0.2, 0.9, 0.3, 1.3) var(--d, 0.5s) both, bob 6s ease-in-out calc(var(--d, 0.5s) + 0.7s) infinite; }
+  .f1 { --d: 0.55s; } .f2 { --d: 0.8s; } .f3 { --d: 1.05s; }
+  @keyframes phone-in { from { opacity: 0; translate: 0 40px; } }
+  @keyframes pop { from { opacity: 0; scale: 0.8; } }
+  @keyframes bob { 50% { translate: 0 -10px; } }
+  @media (min-width: 901px) and (hover: hover) {
+    .stage .phone { transform: perspective(1400px) rotateY(calc(-14deg + var(--ry, 0deg))) rotateX(calc(4deg + var(--rx, 0deg))); transition: transform 0.5s ease-out; }
+  }
+
+  /* the gradient words shimmer */
+  .grad { background-image: linear-gradient(90deg, var(--blue), var(--lilac), var(--violet), var(--blue)); background-size: 300% 100%; animation: sheen 9s linear infinite; }
+  @keyframes sheen { to { background-position: 300% 0; } }
+
+  /* the main button catches the light */
+  .btn-cta { position: relative; overflow: hidden; isolation: isolate; }
+  .btn-cta::after { content: ""; position: absolute; inset: 0; z-index: -1; background: linear-gradient(110deg, transparent 30%, rgba(255, 255, 255, 0.35) 50%, transparent 70%); translate: -120% 0; animation: shine 5s ease-in-out 2s infinite; }
+  @keyframes shine { 35%, 100% { translate: 120% 0; } }
+  .btn { transition: scale 0.2s ease, filter 0.2s ease, background 0.2s ease; }
+  .btn:not(.btn-soon):active { scale: 0.97; }
+
+  /* cards lift and light up under the pointer */
+  @media (hover: hover) {
+    .card:not(.price):hover, .faq details:hover { translate: 0 -4px; box-shadow: inset 0 0 0 1px rgba(185, 164, 255, 0.35), 0 22px 50px rgba(0, 0, 0, 0.4); }
+    .card:hover::after { opacity: 1; }
+    .ex:hover .ico, .card:hover .num { animation: wiggle 0.6s ease; }
+    .faq details { transition: translate 0.35s ease, box-shadow 0.35s ease; }
+  }
+  @keyframes wiggle { 30% { rotate: -10deg; scale: 1.08; } 60% { rotate: 7deg; } }
+
+  /* the chips of the examples arrive one by one */
+  .js .chips.reveal li { opacity: 0; translate: 0 10px; transition: opacity 0.5s ease, translate 0.5s ease; transition-delay: calc(var(--i, 0) * 45ms + 0.15s); }
+  .js .chips.reveal.in li { opacity: 1; translate: none; }
+
+  /* the message being typed */
+  .typed::after { content: ""; display: inline-block; width: 2px; height: 1.1em; margin-left: 2px; vertical-align: -0.15em; background: var(--lilac); animation: caret 1s steps(1) infinite; }
+  .typed.done::after { animation: caret 1s steps(1) 3 forwards; }
+  @keyframes caret { 50% { opacity: 0; } 100% { opacity: 0; } }
+
+  /* the app icon breathes */
+  .end img { animation: glow 4.5s ease-in-out infinite; }
+  @keyframes glow { 50% { box-shadow: 0 0 80px rgba(124, 92, 255, 0.85); scale: 1.04; } }
+
+  /* the questions open smoothly */
+  @supports (interpolate-size: allow-keywords) {
+    .faq { interpolate-size: allow-keywords; }
+    .faq details::details-content { block-size: 0; overflow: clip; transition: block-size 0.35s ease, content-visibility 0.35s allow-discrete; }
+    .faq details[open]::details-content { block-size: auto; }
+  }
+
+  /* how far down the page you are, under the header */
+  @supports (animation-timeline: scroll()) {
+    .top::after { content: ""; position: absolute; left: 0; right: 0; bottom: -1px; height: 2px; background: var(--cta); transform-origin: 0 50%; animation: progress linear both; animation-timeline: scroll(root); }
+    @keyframes progress { from { transform: scaleX(0); } to { transform: scaleX(1); } }
+  }
+}

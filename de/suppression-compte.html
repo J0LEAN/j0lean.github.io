@@ -6,9 +6,22 @@
 <title>Pépouze-Konto und Daten löschen</title>
 <meta name="description" content="So löschst du dein Pépouze-Konto und deine Online-Sicherung, in der App oder per E-Mail – und was dabei gelöscht wird.">
 <link rel="canonical" href="https://pepouzeapp.com/de/suppression-compte.html">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
 <meta name="theme-color" content="#050508">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="de_DE">
+<meta property="og:locale:alternate" content="fr_FR">
+<meta property="og:locale:alternate" content="en_US">
+<meta property="og:locale:alternate" content="es_ES">
+<meta property="og:locale:alternate" content="id_ID">
+<meta property="og:locale:alternate" content="it_IT">
+<meta property="og:locale:alternate" content="ja_JP">
+<meta property="og:locale:alternate" content="ko_KR">
+<meta property="og:locale:alternate" content="nl_NL">
+<meta property="og:locale:alternate" content="pl_PL">
+<meta property="og:locale:alternate" content="pt_BR">
+<meta property="og:locale:alternate" content="tr_TR">
+<meta property="og:locale:alternate" content="zh_CN">
 <link rel="alternate" hreflang="fr" href="https://pepouzeapp.com/suppression-compte.html">
 <link rel="alternate" hreflang="de" href="https://pepouzeapp.com/de/suppression-compte.html">
 <link rel="alternate" hreflang="en" href="https://pepouzeapp.com/en/suppression-compte.html">
@@ -39,10 +52,11 @@
 <link rel="icon" href="../favicon.ico" sizes="any">
 <link rel="icon" type="image/png" sizes="192x192" href="../assets/icon-192.png">
 <link rel="apple-touch-icon" href="../assets/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
 <link rel="preload" href="../assets/fonts/jakarta.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="../assets/fonts/archivo-expanded-black.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="../assets/site.css?v=69842186">
-<script>document.documentElement.classList.add('js');document.addEventListener('click',(e)=>{const m=document.querySelector('.lang-menu[open]');if(m&&!m.contains(e.target))m.removeAttribute('open')})</script>
+<link rel="stylesheet" href="../assets/site.css?v=181769bc">
+<script>document.documentElement.classList.add('js');addEventListener('load',()=>{if(!window.pzMotion)document.documentElement.classList.remove('js')});document.addEventListener('click',(e)=>{const m=document.querySelector('.lang-menu[open]');if(m&&!m.contains(e.target))m.removeAttribute('open')})</script>
 </head>
 <body>
 <a class="skip" href="#contenu">Zum Inhalt springen</a>
@@ -100,15 +114,7 @@
     <p>Alles über deine Daten erfährst du in der <a href="confidentialite.html">Datenschutzerklärung</a>.</p>
   </div>
 </section>
-<script>
-// gentle entrances as sections scroll into view; everything shows at once without this or with reduced motion
-(() => {
-  const els = document.querySelectorAll('.reveal');
-  if (!('IntersectionObserver' in window) || matchMedia('(prefers-reduced-motion: reduce)').matches) { els.forEach((e) => e.classList.add('in')); return; }
-  const io = new IntersectionObserver((list) => { for (const e of list) if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } }, { rootMargin: '0px 0px -6% 0px', threshold: 0.06 });
-  els.forEach((e) => io.observe(e));
-})();
-</script>
+<script src="../assets/motion.js?v=181769bc" defer></script>
 </main>
 
 <footer>
