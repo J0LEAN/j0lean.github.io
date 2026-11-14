@@ -7,7 +7,9 @@
 <meta name="description" content="Automate your Android phone with simple rules, “When… Do…”: volume, Do Not Disturb, brightness, music, reminders… 58 ready-made examples. Free during the launch phase.">
 <link rel="canonical" href="https://pepouzeapp.com/en/">
 <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
-<meta name="theme-color" content="#050508">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#F6F8FB" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#090C12" media="(prefers-color-scheme: dark)">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="en_US">
 <meta property="og:locale:alternate" content="fr_FR">
@@ -53,15 +55,13 @@
 <link rel="icon" type="image/png" sizes="192x192" href="../assets/icon-192.png">
 <link rel="apple-touch-icon" href="../assets/apple-touch-icon.png">
 <link rel="manifest" href="/site.webmanifest">
-<link rel="preload" href="../assets/fonts/jakarta.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="preload" href="../assets/fonts/archivo-expanded-black.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="../assets/site.css?v=181769bc">
+<link rel="preload" href="../assets/fonts/roboto.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="../assets/site.css?v=9700f3e0">
 <script>document.documentElement.classList.add('js');addEventListener('load',()=>{if(!window.pzMotion)document.documentElement.classList.remove('js')});document.addEventListener('click',(e)=>{const m=document.querySelector('.lang-menu[open]');if(m&&!m.contains(e.target))m.removeAttribute('open')})</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "Organization", "@id": "https://pepouzeapp.com/#publisher", "name": "Pépouze", "url": "https://pepouzeapp.com/", "logo": {"@type": "ImageObject", "url": "https://pepouzeapp.com/assets/icon-512.png", "width": 512, "height": 512}, "email": "pepouze.apk@gmail.com"}, {"@type": "WebSite", "@id": "https://pepouzeapp.com/#site", "url": "https://pepouzeapp.com/", "name": "Pépouze", "inLanguage": "en", "publisher": {"@id": "https://pepouzeapp.com/#publisher"}}, {"@type": "WebPage", "@id": "https://pepouzeapp.com/en/", "url": "https://pepouzeapp.com/en/", "name": "Pépouze", "description": "Automate your Android phone with simple rules, “When… Do…”: volume, Do Not Disturb, brightness, music, reminders… 58 ready-made examples. Free during the launch phase.", "inLanguage": "en", "isPartOf": {"@id": "https://pepouzeapp.com/#site"}, "about": {"@id": "https://pepouzeapp.com/en/#app"}, "primaryImageOfPage": "https://pepouzeapp.com/assets/og.jpg"}, {"@type": "MobileApplication", "@id": "https://pepouzeapp.com/en/#app", "name": "Pépouze", "description": "Automate your Android phone with simple rules, “When… Do…”: volume, Do Not Disturb, brightness, music, reminders… 58 ready-made examples. Free during the launch phase.", "url": "https://pepouzeapp.com/en/", "image": "https://pepouzeapp.com/assets/icon-512.png", "screenshot": ["https://pepouzeapp.com/assets/shots/en/accueil.webp", "https://pepouzeapp.com/assets/shots/en/editeur.webp", "https://pepouzeapp.com/assets/shots/en/ia-proposition.webp", "https://pepouzeapp.com/assets/shots/en/historique.webp"], "applicationCategory": "UtilitiesApplication", "applicationSubCategory": "Automation", "operatingSystem": "Android 8.0+", "inLanguage": "en", "isAccessibleForFree": true, "publisher": {"@id": "https://pepouzeapp.com/#publisher"}, "offers": {"@type": "Offer", "price": "0", "priceCurrency": "EUR"}}, {"@type": "FAQPage", "@id": "https://pepouzeapp.com/en/#questions", "inLanguage": "en", "mainEntity": [{"@type": "Question", "name": "Why does Pépouze use the accessibility service?", "acceptedAnswer": {"@type": "Answer", "text": "Only for what you add to your macros: tapping a text on screen, pressing Back or Home, locking the screen, taking a screenshot, knowing which app opens. Screen text is only read to find the one to tap, and nothing leaves your phone. Pépouze acts only on the rules you wrote. The service only turns on with your consent, after a dedicated explanation, and you can switch it off at any time."}}, {"@type": "Question", "name": "Do I need to create an account?", "acceptedAnswer": {"@type": "Answer", "text": "No. The account is only used to back up your macros online. You can also back them up to a file, on Google Drive or on your phone, with no account at all."}}, {"@type": "Question", "name": "Do my macros work with the screen off?", "acceptedAnswer": {"@type": "Answer", "text": "Yes, most of them: Pépouze listens for events in the background. To keep Android from putting it to sleep, choose “Battery: Unrestricted” on the app's page in Android settings. Actions that touch the screen need an unlocked phone."}}, {"@type": "Question", "name": "Does Pépouze send text messages for me?", "acceptedAnswer": {"@type": "Answer", "text": "No. The “Prepare a text message” action opens your messaging app with the number and text ready: you're the one who taps Send."}}, {"@type": "Question", "name": "How do I delete my account and my data?", "acceptedAnswer": {"@type": "Answer", "text": "In the app: My account → Delete my account. Without the app, follow the account deletion page ."}}]}]}</script>
 </head>
 <body>
 <a class="skip" href="#contenu">Skip to content</a>
-<div class="sky" aria-hidden="true"></div>
 
 <header class="top">
   <div class="wrap">
@@ -81,202 +81,175 @@
 </header>
 
 <main id="contenu">
-<section class="hero">
-  <div class="wrap">
-    <div>
-      <p class="eyebrow">Automation for Android</p>
-      <h1>Your routine, <span class="grad">on autopilot.</span></h1>
-      <p class="lead">Write a simple rule, “When… Do…”, and your phone takes care of it at the right moment, all by itself.</p>
-      <div class="actions">
-        <span class="btn btn-soon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v11m-5-5 5 5 5-5M5 19h14"/></svg>Coming soon to Google Play</span>
-        <a class="btn btn-glass" href="#exemples">See examples</a>
+<section class="rule" id="regle" aria-labelledby="regle-titre" style="--n: 6">
+  <div class="rule-stick">
+    <div class="wrap rule-wrap">
+      <div class="rule-head">
+        <h1 id="regle-titre">Your routine, <span class="hl">on autopilot.</span></h1>
+        <p class="lead">Write a simple rule, “When… Do…”, and your phone takes care of it at the right moment, all by itself.</p>
       </div>
-      <ul class="facts">
-        <li>Android 8 or newer</li>
-        <li>No account required</li>
-        <li>Free during launch</li>
-      </ul>
-    </div>
-    <div class="stage" aria-hidden="true">
-      <div class="phone"><img src="../assets/shots/en/accueil.webp" alt="" width="540" height="1200" fetchpriority="high"></div>
-      <div class="float f1"><span class="dot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></span><span><small>When…</small><b>At 11:00 PM</b></span></div>
-      <div class="float f2"><span class="dot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 14.5A8 8 0 1 1 9.5 4a6.5 6.5 0 0 0 10.5 10.5z"/></svg></span><span><small>Do…</small><b>Do Not Disturb</b></span></div>
-      <div class="float f3"><span class="dot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg></span><span><small>Quiet night</small><b>Macro on</b></span></div>
+      <div class="rule-grid">
+        <ol class="scenes">
+        <li class="scene is-on" data-i="0"><p class="w"><span class="k">When</span> the car's Bluetooth connects</p><p class="d"><span class="k">Do</span> turn the volume up and resume the music.</p></li>
+        <li class="scene" data-i="1"><p class="w"><span class="k">When</span> it's 11 PM</p><p class="d"><span class="k">Do</span> turn on Do Not Disturb, dim the screen to the minimum and stop the music.</p></li>
+        <li class="scene" data-i="2"><p class="w"><span class="k">When</span> the battery drops below 20%</p><p class="d"><span class="k">Do</span> dim the screen and make it sleep sooner.</p></li>
+        <li class="scene" data-i="3"><p class="w"><span class="k">When</span> you plug in your headphones</p><p class="d"><span class="k">Do</span> start playback at a gentle volume.</p></li>
+        <li class="scene" data-i="4"><p class="w"><span class="k">When</span> you unplug the charger in the morning</p><p class="d"><span class="k">Do</span> announce the time and the battery level.</p></li>
+        <li class="scene" data-i="5"><p class="w"><span class="k">When</span> it's 10:30 PM, Sunday to Thursday</p><p class="d"><span class="k">Do</span> gently remind me to put the phone down, and dim the screen.</p></li>
+        </ol>
+        <div class="device" aria-hidden="true">
+          <div class="screen">
+            <p class="scr-head"><img src="../assets/icon-192.png" alt="" width="28" height="28">Pépouze</p>
+            <ul>
+            <li class="m is-on" data-i="0"><span class="badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 17v-4l2.2-5.2A2 2 0 0 1 8 6.5h8a2 2 0 0 1 1.8 1.3L20 13v4H4z"/><path d="M4 13h16"/><circle cx="8" cy="17" r="1.6"/><circle cx="16" cy="17" r="1.6"/></svg></span><b>Car mode</b><span class="sw"></span><span class="ran"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg></span></li>
+            <li class="m" data-i="1"><span class="badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 14.5A8 8 0 1 1 9.5 4a6.5 6.5 0 0 0 10.5 10.5z"/></svg></span><b>Quiet night</b><span class="sw"></span><span class="ran"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg></span></li>
+            <li class="m" data-i="2"><span class="badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="7" y="5" width="10" height="16" rx="2.5"/><path d="M10 2.5h4M10 16h4"/></svg></span><b>Battery saver</b><span class="sw"></span><span class="ran"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg></span></li>
+            <li class="m" data-i="3"><span class="badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 15v-3a8 8 0 0 1 16 0v3"/><rect x="3" y="14" width="4.5" height="7" rx="1.6"/><rect x="16.5" y="14" width="4.5" height="7" rx="1.6"/></svg></span><b>Headphones = music</b><span class="sw"></span><span class="ran"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg></span></li>
+            <li class="m" data-i="4"><span class="badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 2.5v5M15 2.5v5M6 7.5h12v3.5a6 6 0 0 1-12 0V7.5zM12 17v4.5"/></svg></span><b>Good morning</b><span class="sw"></span><span class="ran"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg></span></li>
+            <li class="m" data-i="5"><span class="badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 16v-5a6 6 0 0 1 12 0v5l2 2H4z"/><path d="M10 20.5a2 2 0 0 0 4 0"/></svg></span><b>Bedtime</b><span class="sw"></span><span class="ran"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg></span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="rule-foot">
+        <div class="actions"><span class="btn btn-soon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v11m-5-5 5 5 5-5M5 19h14"/></svg>Coming soon to Google Play</span><a class="btn btn-glass" href="#exemples">See examples</a></div>
+        <ul class="facts"><li>Android 8 or newer</li><li>No account required</li><li>Free during launch</li></ul>
+      </div>
     </div>
   </div>
+</section>
+
+<section id="exemples" class="band">
+  <div class="wrap split-head">
+    <h2>58 ready-made macros.</h2>
+    <p class="lead">Copy an example, tweak it, and you're done. Here are a few.</p>
+  </div>
+  <div class="wrap"><ul class="chips" aria-label="The 11 example categories"><li>Night and sleep</li><li>Morning</li><li>Work and study</li><li>Car and commute</li><li>Battery and charging</li><li>Music and sound</li><li>Screen and video</li><li>Apps and social media</li><li>Reminders and health</li><li>Home</li><li>Shortcuts</li></ul></div>
 </section>
 
 <section id="fonctionnement">
-  <div class="wrap split">
-    <div>
-      <div class="head reveal">
-        <p class="eyebrow">How it works</p>
-        <h2>One rule, and it's handled.</h2>
-        <p class="lead">Every macro fits in one sentence. You build it from three blocks, no coding needed.</p>
-      </div>
-      <div class="grid steps">
-        <article class="card reveal c-gold">
-          <span class="tag">1 · When…</span>
-          <h3>What starts the macro</h3>
-          <p>A time and days, Wi-Fi, Bluetooth, headphones, the charger, the battery level, the screen turning on, an app opening…</p>
-          <span class="pill">11 triggers</span>
-        </article>
-        <article class="card reveal c-violet">
-          <span class="tag">2 · Do…</span>
-          <h3>The actions, in order</h3>
-          <p>Volume, ringer, Do Not Disturb, brightness, flashlight, music, alarm, timer, notification, reading a text out loud, opening an app or a link, tapping a text on screen…</p>
-          <span class="pill">29 actions to combine</span>
-        </article>
-        <article class="card reveal c-cyan">
-          <span class="tag">3 · Only if… (optional)</span>
-          <h3>Conditions, if you need them</h3>
-          <p>A time range, days of the week, a battery level, the phone charging.</p>
-        </article>
-      </div>
-    </div>
-    <figure class="shot reveal"><div class="phone"><img src="../assets/shots/en/editeur.webp" alt="The Pépouze macro editor: the When… block with a battery level, then the Do… block with its steps" width="540" height="1200" loading="lazy"></div></figure>
-  </div>
-</section>
-
-<section id="exemples">
   <div class="wrap">
-    <div class="head reveal">
-      <p class="eyebrow">Examples</p>
-      <h2>58 ready-made macros.</h2>
-      <p class="lead">Copy an example, tweak it, and you're done. Here are a few.</p>
+    <div class="sec-head">
+      <h2>One rule, and it's handled.</h2>
+      <p class="lead">Every macro fits in one sentence. You build it from three blocks, no coding needed.</p>
     </div>
-    <div class="grid g2">
-      <article class="card ex reveal c-blue"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 17v-4l2.2-5.2A2 2 0 0 1 8 6.5h8a2 2 0 0 1 1.8 1.3L20 13v4H4z"/><path d="M4 13h16"/><circle cx="8" cy="17" r="1.6"/><circle cx="16" cy="17" r="1.6"/></svg></span><div><h3>Car mode</h3><p><span class="when">As soon as the car's Bluetooth connects,</span> the volume goes up and the music picks up where it left off.</p></div></article>
-      <article class="card ex reveal c-violet"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 14.5A8 8 0 1 1 9.5 4a6.5 6.5 0 0 0 10.5 10.5z"/></svg></span><div><h3>Quiet night</h3><p><span class="when">At 11 PM,</span> Do Not Disturb turns on, brightness drops to the minimum and the music stops.</p></div></article>
-      <article class="card ex reveal c-mint"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="7" y="5" width="10" height="16" rx="2.5"/><path d="M10 2.5h4M10 16h4"/></svg></span><div><h3>Battery saver</h3><p><span class="when">Below 20% battery,</span> the screen dims and goes to sleep sooner.</p></div></article>
-      <article class="card ex reveal c-pink"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 15v-3a8 8 0 0 1 16 0v3"/><rect x="3" y="14" width="4.5" height="7" rx="1.6"/><rect x="16.5" y="14" width="4.5" height="7" rx="1.6"/></svg></span><div><h3>Headphones = music</h3><p><span class="when">When you plug in your headphones,</span> playback starts at a gentle volume.</p></div></article>
-      <article class="card ex reveal c-orange"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 2.5v5M15 2.5v5M6 7.5h12v3.5a6 6 0 0 1-12 0V7.5zM12 17v4.5"/></svg></span><div><h3>Good morning</h3><p><span class="when">In the morning, when you unplug the charger,</span> your phone tells you the time and the battery level.</p></div></article>
-      <article class="card ex reveal c-gold"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 16v-5a6 6 0 0 1 12 0v5l2 2H4z"/><path d="M10 20.5a2 2 0 0 0 4 0"/></svg></span><div><h3>Bedtime</h3><p><span class="when">Sunday to Thursday at 10:30 PM,</span> a gentle reminder to put your phone down, and the screen dims.</p></div></article>
+    <div class="editor">
+      <div class="step"><p class="step-k"><span class="badge num">1</span>When</p><h3>What starts the macro</h3><p>A time and days, Wi-Fi, Bluetooth, headphones, the charger, the battery level, the screen turning on, an app opening…</p><span class="chip">11 triggers</span></div>
+      <div class="step"><p class="step-k"><span class="badge num">2</span>Do</p><h3>The actions, in order</h3><p>Volume, ringer, Do Not Disturb, brightness, flashlight, music, alarm, timer, notification, reading a text out loud, opening an app or a link, tapping a text on screen…</p><span class="chip">29 actions to combine</span></div>
+      <div class="step"><p class="step-k"><span class="badge num">3</span>Only if (optional)</p><h3>Conditions, if you need them</h3><p>A time range, days of the week, a battery level, the phone charging.</p></div>
     </div>
-    <ul class="chips reveal" aria-label="The 11 example categories">
-      <li>Night and sleep</li><li>Morning</li><li>Work and study</li><li>Car and commute</li><li>Battery and charging</li><li>Music and sound</li><li>Screen and video</li><li>Apps and social media</li><li>Reminders and health</li><li>Home</li><li>Shortcuts</li>
-    </ul>
   </div>
 </section>
 
 <section id="nova">
-  <div class="wrap split flip">
-    <figure class="shot reveal"><div class="phone"><img src="../assets/shots/en/ia-proposition.webp" alt="Pépouze has prepared the Headphones music macro from one sentence: When… headphones plugged in, Do… media volume at 60% then play" width="540" height="1200" loading="lazy"></div></figure>
-    <div class="reveal">
-      <p class="eyebrow">Pépouze, your assistant</p>
+  <div class="wrap split">
+    <div>
       <h2>Say it, and Pépouze sets it up.</h2>
       <p class="lead">Describe what you want in one sentence. Pépouze prepares the macro, you check it, then you save it.</p>
-      <p class="bubble"><small>You</small>“When I plug in my headphones, play music at 60%”</p>
       <ul class="ticks">
-        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg><span><b>Nothing turns on without your OK:</b> you review every macro before saving it.</span></li>
-        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg><span><b>Pépouze runs on your phone:</b> your sentence isn't sent anywhere.</span></li>
-        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg><span><b>For more complex requests,</b> Pépouze can hand over to Claude, with your own account, no key needed.</span></li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg><span><span><b>Nothing turns on without your OK:</b> you review every macro before saving it.</span></span></li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg><span><span><b>Pépouze runs on your phone:</b> your sentence isn't sent anywhere.</span></span></li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg><span><span><b>For more complex requests,</b> Pépouze can hand over to Claude, with your own account, no key needed.</span></span></li>
       </ul>
+    </div>
+    <div class="chat">
+      <p class="ask"><small>You</small>“When I plug in my headphones, play music at 60%”</p>
+      <div class="reply"><p class="reply-head"><img src="../assets/icon-192.png" alt="" width="32" height="32"><b>Pépouze</b></p><p>Pépouze has prepared the Headphones music macro from one sentence: When… headphones plugged in, Do… media volume at 60% then play</p></div>
     </div>
   </div>
 </section>
 
 <section id="partage">
   <div class="wrap">
-    <div class="head reveal">
-      <p class="eyebrow">Share and run</p>
+    <div class="sec-head">
       <h2>Your macros get around.</h2>
       <p class="lead">Swap ideas with the community, and run your macros without even opening the app.</p>
     </div>
-    <div class="grid g2">
-      <article class="card reveal c-cyan"><span class="num"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="m8.6 13.5 6.8 4M15.4 6.5l-6.8 4"/></svg></span><h3>A community</h3><p>A library of macros shared by users. Copy the one you like, publish your own. <a href="communaute.html">See the community</a></p></article>
-      <article class="card reveal c-violet"><span class="num"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><path d="M6.5 6.5h.01M17.5 6.5h.01M6.5 17.5h.01M14 14h.01M17.5 14h.01M21 14h.01M17.5 17.5h.01M14 21h.01M17.5 21h.01M21 21h.01M21 17.5h.01"/></svg></span><h3>A QR code for every macro</h3><p>Show it to a friend, put it in a video: any camera opens it, and Pépouze imports it.</p></article>
-      <article class="card reveal c-gold"><span class="num"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 9.5V4a2 2 0 0 0-4 0v10"/><path d="M14 10V9a2 2 0 0 0-4 0v1"/><path d="M18 11v-1a2 2 0 0 0-4 0"/><path d="M18 11a2 2 0 1 1 4 0v3a8 8 0 0 1-8 8h-2c-2.8 0-4.5-.86-6-2.34l-3.6-3.6a2 2 0 0 1 2.83-2.82L7 15"/></svg></span><h3>One tap away</h3><p>A home screen widget, a Quick Settings tile, or a shortcut: the macro runs right away.</p></article>
-      <article class="card reveal c-mint"><span class="num"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.7 3.8 5.7 3.8 9s-1.3 6.3-3.8 9c-2.5-2.7-3.8-5.7-3.8-9S9.5 5.7 12 3z"/></svg></span><h3>In your language</h3><p>Pépouze speaks 13 languages and understands your requests right on the phone.</p></article>
+    <div class="defs">
+      <div class="def"><span class="badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="m8.6 13.5 6.8 4M15.4 6.5l-6.8 4"/></svg></span><h3>A community</h3><p>A library of macros shared by users. Copy the one you like, publish your own. <a href="communaute.html">See the community</a></p></div>
+      <div class="def"><span class="badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><path d="M6.5 6.5h.01M17.5 6.5h.01M6.5 17.5h.01M14 14h.01M17.5 14h.01M21 14h.01M17.5 17.5h.01M14 21h.01M17.5 21h.01M21 21h.01M21 17.5h.01"/></svg></span><h3>A QR code for every macro</h3><p>Show it to a friend, put it in a video: any camera opens it, and Pépouze imports it.</p></div>
+      <div class="def"><span class="badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 9.5V4a2 2 0 0 0-4 0v10"/><path d="M14 10V9a2 2 0 0 0-4 0v1"/><path d="M18 11v-1a2 2 0 0 0-4 0"/><path d="M18 11a2 2 0 1 1 4 0v3a8 8 0 0 1-8 8h-2c-2.8 0-4.5-.86-6-2.34l-3.6-3.6a2 2 0 0 1 2.83-2.82L7 15"/></svg></span><h3>One tap away</h3><p>A home screen widget, a Quick Settings tile, or a shortcut: the macro runs right away.</p></div>
+      <div class="def"><span class="badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.7 3.8 5.7 3.8 9s-1.3 6.3-3.8 9c-2.5-2.7-3.8-5.7-3.8-9S9.5 5.7 12 3z"/></svg></span><h3>In your language</h3><p>Pépouze speaks 13 languages and understands your requests right on the phone.</p></div>
     </div>
   </div>
 </section>
 
 <section id="controle">
   <div class="wrap split">
+    <figure class="history">
+      <ol aria-label="The Pépouze history: Car mode, Headphones = music, Quiet night and Battery saver, with the time and what triggered each one">
+          <li><span class="badge solid"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg></span><span><b>Car mode</b><small>As soon as the car's Bluetooth connects</small></span><time>15:13</time></li>
+          <li><span class="badge solid"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg></span><span><b>Headphones = music</b><small>When you plug in your headphones</small></span><time>14:27</time></li>
+          <li><span class="badge solid"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg></span><span><b>Quiet night</b><small>At 11 PM</small></span><time>23:00</time></li>
+          <li><span class="badge solid"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg></span><span><b>Battery saver</b><small>Below 20% battery</small></span><time>12:17</time></li>
+      </ol>
+    </figure>
     <div>
-      <div class="head reveal">
-        <p class="eyebrow">You stay in control</p>
-        <h2>Everything is visible, everything is explained.</h2>
-      </div>
-      <div class="grid g2">
-        <article class="card reveal c-mint"><span class="num"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3.5 12a8.5 8.5 0 1 0 2.6-6.1L3.5 8.5"/><path d="M3.5 3.5v5h5"/><path d="M12 7.5V12l3 2"/></svg></span><h3>History</h3><p>Every run is logged, successful or not, along with what triggered it.</p></article>
-        <article class="card reveal c-gold"><span class="num"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3 5 6v6c0 4.4 3 7.6 7 9 4-1.4 7-4.6 7-9V6l-7-3z"/><path d="m9 12 2 2 4-4"/></svg></span><h3>Permissions at the right time</h3><p>A permission is only requested when a macro needs it, with an explanation.</p></article>
-        <article class="card reveal c-blue"><span class="num"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 18.5h10a4 4 0 0 0 .6-7.95A6 6 0 0 0 6.1 10 4.3 4.3 0 0 0 7 18.5z"/></svg></span><h3>Backup</h3><p>To Google Drive or your phone, no account needed. Or online, with an account.</p></article>
-        <article class="card reveal c-pink"><span class="num"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="11" width="14" height="10" rx="2.5"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg></span><h3>Your data stays yours</h3><p>Your macros live on your phone. No analytics, no data sold.</p></article>
+      <h2>Everything is visible, everything is explained.</h2>
+      <div class="defs one">
+        <div class="def"><span class="badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3.5 12a8.5 8.5 0 1 0 2.6-6.1L3.5 8.5"/><path d="M3.5 3.5v5h5"/><path d="M12 7.5V12l3 2"/></svg></span><h3>History</h3><p>Every run is logged, successful or not, along with what triggered it.</p></div>
+        <div class="def"><span class="badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3 5 6v6c0 4.4 3 7.6 7 9 4-1.4 7-4.6 7-9V6l-7-3z"/><path d="m9 12 2 2 4-4"/></svg></span><h3>Permissions at the right time</h3><p>A permission is only requested when a macro needs it, with an explanation.</p></div>
+        <div class="def"><span class="badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 18.5h10a4 4 0 0 0 .6-7.95A6 6 0 0 0 6.1 10 4.3 4.3 0 0 0 7 18.5z"/></svg></span><h3>Backup</h3><p>To Google Drive or your phone, no account needed. Or online, with an account.</p></div>
+        <div class="def"><span class="badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="11" width="14" height="10" rx="2.5"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg></span><h3>Your data stays yours</h3><p>Your macros live on your phone. No analytics, no data sold.</p></div>
       </div>
     </div>
-    <figure class="shot reveal"><div class="phone"><img src="../assets/shots/en/historique.webp" alt="The Pépouze history: Car mode, Headphones = music, Quiet night and Battery saver, with the time and what triggered each one" width="540" height="1200" loading="lazy"></div></figure>
   </div>
 </section>
 
 <section id="tarifs">
-  <div class="wrap">
-    <div class="head reveal">
-      <p class="eyebrow">Price</p>
+  <div class="wrap split">
+    <div>
       <h2>Free during launch.</h2>
       <p class="lead">During the launch phase, Pépouze is completely free, with no ads. A paid version will follow: you&#x27;ll be told beforehand, and your macros stay yours.</p>
     </div>
-    <div class="grid price-one">
-      <article class="card price reveal c-blue">
-        <span class="tag">Launch phase</span>
-        <p class="amount">€0</p>
-        <ul>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg><span>Every feature and all 58 examples</span></li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg><span>As many macros as you want</span></li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg><span>No ads</span></li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg><span>No account required</span></li>
-        </ul>
-      </article>
+    <div class="price">
+      <span class="chip on">Launch phase</span>
+      <p class="amount">€0</p>
+      <ul><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg><span>Every feature and all 58 examples</span></li><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg><span>As many macros as you want</span></li><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg><span>No ads</span></li><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg><span>No account required</span></li></ul>
     </div>
   </div>
 </section>
 
 <section id="questions">
   <div class="wrap">
-    <div class="head reveal">
-      <p class="eyebrow">FAQ</p>
-      <h2>Questions people ask us.</h2>
-    </div>
+    <div class="sec-head"><h2>Questions people ask us.</h2></div>
     <div class="faq">
       <details>
-        <summary>Why does Pépouze use the accessibility service?</summary>
-        <div>
-          <p>Only for what you add to your macros: tapping a text on screen, pressing Back or Home, locking the screen, taking a screenshot, knowing which app opens.</p>
-          <p>Screen text is only read to find the one to tap, and nothing leaves your phone. Pépouze acts only on the rules you wrote. The service only turns on with your consent, after a dedicated explanation, and you can switch it off at any time.</p>
-        </div>
-      </details>
+<summary>Why does Pépouze use the accessibility service?</summary>
+<div>
+<p>Only for what you add to your macros: tapping a text on screen, pressing Back or Home, locking the screen, taking a screenshot, knowing which app opens.</p>
+<p>Screen text is only read to find the one to tap, and nothing leaves your phone. Pépouze acts only on the rules you wrote. The service only turns on with your consent, after a dedicated explanation, and you can switch it off at any time.</p>
+</div>
+</details>
       <details>
-        <summary>Do I need to create an account?</summary>
-        <div><p>No. The account is only used to back up your macros online. You can also back them up to a file, on Google Drive or on your phone, with no account at all.</p></div>
-      </details>
+<summary>Do I need to create an account?</summary>
+<div><p>No. The account is only used to back up your macros online. You can also back them up to a file, on Google Drive or on your phone, with no account at all.</p></div>
+</details>
       <details>
-        <summary>Do my macros work with the screen off?</summary>
-        <div><p>Yes, most of them: Pépouze listens for events in the background. To keep Android from putting it to sleep, choose “Battery: Unrestricted” on the app's page in Android settings. Actions that touch the screen need an unlocked phone.</p></div>
-      </details>
+<summary>Do my macros work with the screen off?</summary>
+<div><p>Yes, most of them: Pépouze listens for events in the background. To keep Android from putting it to sleep, choose “Battery: Unrestricted” on the app's page in Android settings. Actions that touch the screen need an unlocked phone.</p></div>
+</details>
       <details>
-        <summary>Does Pépouze send text messages for me?</summary>
-        <div><p>No. The “Prepare a text message” action opens your messaging app with the number and text ready: you're the one who taps Send.</p></div>
-      </details>
+<summary>Does Pépouze send text messages for me?</summary>
+<div><p>No. The “Prepare a text message” action opens your messaging app with the number and text ready: you're the one who taps Send.</p></div>
+</details>
       <details>
-        <summary>How do I delete my account and my data?</summary>
-        <div><p>In the app: My account → Delete my account. Without the app, follow <a href="suppression-compte.html">the account deletion page</a>.</p></div>
-      </details>
+<summary>How do I delete my account and my data?</summary>
+<div><p>In the app: My account → Delete my account. Without the app, follow <a href="suppression-compte.html">the account deletion page</a>.</p></div>
+</details>
     </div>
   </div>
 </section>
 
 <section class="end">
   <div class="wrap">
-    <div class="card reveal">
-      <img src="../assets/icon-192.png" alt="" width="88" height="88">
-      <h2>Automate everything. <span class="grad">Even your good resolutions.</span></h2>
-      <p class="lead" style="margin: 0 auto">Free during launch, on Android.</p>
-      <p class="tester">Pépouze is coming soon. Try it before everyone else: write to us and we&#x27;ll send you an invitation.</p><div class="actions"><a class="btn btn-cta" href="mailto:pepouze.apk@gmail.com?subject=I%20want%20to%20test%20P%C3%A9pouze"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg>Become a tester</a><span class="btn btn-soon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v11m-5-5 5 5 5-5M5 19h14"/></svg>Coming soon to Google Play</span></div>
-    </div>
+    <img src="../assets/icon-192.png" alt="" width="88" height="88">
+    <h2>Automate everything. <span class="hl">Even your good resolutions.</span></h2>
+    <p class="lead">Free during launch, on Android.</p>
+    <p class="tester">Pépouze is coming soon. Try it before everyone else: write to us and we&#x27;ll send you an invitation.</p><div class="actions"><a class="btn btn-cta" href="mailto:pepouze.apk@gmail.com?subject=I%20want%20to%20test%20P%C3%A9pouze"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg>Become a tester</a><span class="btn btn-soon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v11m-5-5 5 5 5-5M5 19h14"/></svg>Coming soon to Google Play</span></div>
   </div>
 </section>
-<script src="../assets/motion.js?v=181769bc" defer></script>
+<script src="../assets/motion.js?v=9700f3e0" defer></script>
 </main>
 
 <footer>

@@ -7,7 +7,9 @@
 <meta name="description" content="Automatiza tu teléfono Android con reglas sencillas, «Cuando… Hacer…»: volumen, No molestar, brillo, música, recordatorios… 58 ejemplos listos para usar. Gratis durante el lanzamiento.">
 <link rel="canonical" href="https://pepouzeapp.com/es/">
 <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
-<meta name="theme-color" content="#050508">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#F6F8FB" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#090C12" media="(prefers-color-scheme: dark)">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="es_ES">
 <meta property="og:locale:alternate" content="fr_FR">
@@ -53,15 +55,13 @@
 <link rel="icon" type="image/png" sizes="192x192" href="../assets/icon-192.png">
 <link rel="apple-touch-icon" href="../assets/apple-touch-icon.png">
 <link rel="manifest" href="/site.webmanifest">
-<link rel="preload" href="../assets/fonts/jakarta.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="preload" href="../assets/fonts/archivo-expanded-black.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="../assets/site.css?v=181769bc">
+<link rel="preload" href="../assets/fonts/roboto.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="../assets/site.css?v=9700f3e0">
 <script>document.documentElement.classList.add('js');addEventListener('load',()=>{if(!window.pzMotion)document.documentElement.classList.remove('js')});document.addEventListener('click',(e)=>{const m=document.querySelector('.lang-menu[open]');if(m&&!m.contains(e.target))m.removeAttribute('open')})</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "Organization", "@id": "https://pepouzeapp.com/#publisher", "name": "Pépouze", "url": "https://pepouzeapp.com/", "logo": {"@type": "ImageObject", "url": "https://pepouzeapp.com/assets/icon-512.png", "width": 512, "height": 512}, "email": "pepouze.apk@gmail.com"}, {"@type": "WebSite", "@id": "https://pepouzeapp.com/#site", "url": "https://pepouzeapp.com/", "name": "Pépouze", "inLanguage": "es", "publisher": {"@id": "https://pepouzeapp.com/#publisher"}}, {"@type": "WebPage", "@id": "https://pepouzeapp.com/es/", "url": "https://pepouzeapp.com/es/", "name": "Pépouze", "description": "Automatiza tu teléfono Android con reglas sencillas, «Cuando… Hacer…»: volumen, No molestar, brillo, música, recordatorios… 58 ejemplos listos para usar. Gratis durante el lanzamiento.", "inLanguage": "es", "isPartOf": {"@id": "https://pepouzeapp.com/#site"}, "about": {"@id": "https://pepouzeapp.com/es/#app"}, "primaryImageOfPage": "https://pepouzeapp.com/assets/og.jpg"}, {"@type": "MobileApplication", "@id": "https://pepouzeapp.com/es/#app", "name": "Pépouze", "description": "Automatiza tu teléfono Android con reglas sencillas, «Cuando… Hacer…»: volumen, No molestar, brillo, música, recordatorios… 58 ejemplos listos para usar. Gratis durante el lanzamiento.", "url": "https://pepouzeapp.com/es/", "image": "https://pepouzeapp.com/assets/icon-512.png", "screenshot": ["https://pepouzeapp.com/assets/shots/es/accueil.webp", "https://pepouzeapp.com/assets/shots/es/editeur.webp", "https://pepouzeapp.com/assets/shots/es/ia-proposition.webp", "https://pepouzeapp.com/assets/shots/es/historique.webp"], "applicationCategory": "UtilitiesApplication", "applicationSubCategory": "Automation", "operatingSystem": "Android 8.0+", "inLanguage": "es", "isAccessibleForFree": true, "publisher": {"@id": "https://pepouzeapp.com/#publisher"}, "offers": {"@type": "Offer", "price": "0", "priceCurrency": "EUR"}}, {"@type": "FAQPage", "@id": "https://pepouzeapp.com/es/#questions", "inLanguage": "es", "mainEntity": [{"@type": "Question", "name": "¿Por qué Pépouze usa el servicio de accesibilidad?", "acceptedAnswer": {"@type": "Answer", "text": "Solo para lo que tú agregas a tus macros: tocar un texto en la pantalla, pulsar Atrás o Inicio, bloquear la pantalla, hacer una captura de pantalla, saber qué app se abre. El texto de la pantalla solo se lee para encontrar el que hay que tocar, y nada sale del teléfono. Pépouze actúa únicamente según las reglas que tú escribiste. El servicio solo se activa con tu permiso, después de una explicación específica, y puedes desactivarlo cuando quieras."}}, {"@type": "Question", "name": "¿Hay que crear una cuenta?", "acceptedAnswer": {"@type": "Answer", "text": "No. La cuenta solo sirve para guardar tus macros en línea. También puedes guardarlas en un archivo, en Google Drive o en el teléfono, sin ninguna cuenta."}}, {"@type": "Question", "name": "¿Mis macros funcionan con la pantalla apagada?", "acceptedAnswer": {"@type": "Answer", "text": "Sí, la mayoría: Pépouze escucha los eventos en segundo plano. Para que Android no la suspenda, elige «Batería: sin restricciones» en la página de la app, en los ajustes de Android. Las acciones que tocan la pantalla necesitan el teléfono desbloqueado."}}, {"@type": "Question", "name": "¿Pépouze envía SMS por mí?", "acceptedAnswer": {"@type": "Answer", "text": "No. La acción «Preparar un SMS» abre tu app de mensajes con el número y el texto listos: eres tú quien toca Enviar."}}, {"@type": "Question", "name": "¿Cómo elimino mi cuenta y mis datos?", "acceptedAnswer": {"@type": "Answer", "text": "En la app: Mi cuenta → Eliminar mi cuenta. Sin la app, sigue la página de eliminación de la cuenta ."}}]}]}</script>
 </head>
 <body>
 <a class="skip" href="#contenu">Ir al contenido</a>
-<div class="sky" aria-hidden="true"></div>
 
 <header class="top">
   <div class="wrap">
@@ -81,202 +81,175 @@
 </header>
 
 <main id="contenu">
-<section class="hero">
-  <div class="wrap">
-    <div>
-      <p class="eyebrow">Automatización para Android</p>
-      <h1>Tu rutina <span class="grad">en piloto automático.</span></h1>
-      <p class="lead">Escribe una regla sencilla, «Cuando… Hacer…», y tu teléfono se encarga solo, en el momento justo.</p>
-      <div class="actions">
-        <span class="btn btn-soon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v11m-5-5 5 5 5-5M5 19h14"/></svg>Muy pronto en Google Play</span>
-        <a class="btn btn-glass" href="#exemples">Ver ejemplos</a>
+<section class="rule" id="regle" aria-labelledby="regle-titre" style="--n: 6">
+  <div class="rule-stick">
+    <div class="wrap rule-wrap">
+      <div class="rule-head">
+        <h1 id="regle-titre">Tu rutina <span class="hl">en piloto automático.</span></h1>
+        <p class="lead">Escribe una regla sencilla, «Cuando… Hacer…», y tu teléfono se encarga solo, en el momento justo.</p>
       </div>
-      <ul class="facts">
-        <li>Android 8 o posterior</li>
-        <li>Sin cuenta obligatoria</li>
-        <li>Gratis durante el lanzamiento</li>
-      </ul>
-    </div>
-    <div class="stage" aria-hidden="true">
-      <div class="phone"><img src="../assets/shots/es/accueil.webp" alt="" width="540" height="1200" fetchpriority="high"></div>
-      <div class="float f1"><span class="dot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></span><span><small>Cuando…</small><b>A las 23:00</b></span></div>
-      <div class="float f2"><span class="dot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 14.5A8 8 0 1 1 9.5 4a6.5 6.5 0 0 0 10.5 10.5z"/></svg></span><span><small>Hacer…</small><b>No molestar</b></span></div>
-      <div class="float f3"><span class="dot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg></span><span><small>Noche tranquila</small><b>Macro activada</b></span></div>
+      <div class="rule-grid">
+        <ol class="scenes">
+        <li class="scene is-on" data-i="0"><p class="w"><span class="k">Cuando</span> se conecta el Bluetooth del auto</p><p class="d"><span class="k">Hacer</span> subir el volumen y reanudar la música.</p></li>
+        <li class="scene" data-i="1"><p class="w"><span class="k">Cuando</span> son las 23:00</p><p class="d"><span class="k">Hacer</span> activar No molestar, bajar el brillo al mínimo y detener la música.</p></li>
+        <li class="scene" data-i="2"><p class="w"><span class="k">Cuando</span> la batería baja del 20 %</p><p class="d"><span class="k">Hacer</span> bajar el brillo y apagar la pantalla antes.</p></li>
+        <li class="scene" data-i="3"><p class="w"><span class="k">Cuando</span> conectas tus auriculares</p><p class="d"><span class="k">Hacer</span> reproducir música a un volumen suave.</p></li>
+        <li class="scene" data-i="4"><p class="w"><span class="k">Cuando</span> desconectas el cargador por la mañana</p><p class="d"><span class="k">Hacer</span> decir la hora y el nivel de batería.</p></li>
+        <li class="scene" data-i="5"><p class="w"><span class="k">Cuando</span> son las 22:30, de domingo a jueves</p><p class="d"><span class="k">Hacer</span> recordar con suavidad dejar el teléfono, y bajar el brillo.</p></li>
+        </ol>
+        <div class="device" aria-hidden="true">
+          <div class="screen">
+            <p class="scr-head"><img src="../assets/icon-192.png" alt="" width="28" height="28">Pépouze</p>
+            <ul>
+            <li class="m is-on" data-i="0"><span class="badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 17v-4l2.2-5.2A2 2 0 0 1 8 6.5h8a2 2 0 0 1 1.8 1.3L20 13v4H4z"/><path d="M4 13h16"/><circle cx="8" cy="17" r="1.6"/><circle cx="16" cy="17" r="1.6"/></svg></span><b>Modo auto</b><span class="sw"></span><span class="ran"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg></span></li>
+            <li class="m" data-i="1"><span class="badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 14.5A8 8 0 1 1 9.5 4a6.5 6.5 0 0 0 10.5 10.5z"/></svg></span><b>Noche tranquila</b><span class="sw"></span><span class="ran"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg></span></li>
+            <li class="m" data-i="2"><span class="badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="7" y="5" width="10" height="16" rx="2.5"/><path d="M10 2.5h4M10 16h4"/></svg></span><b>Ahorro de batería</b><span class="sw"></span><span class="ran"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg></span></li>
+            <li class="m" data-i="3"><span class="badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 15v-3a8 8 0 0 1 16 0v3"/><rect x="3" y="14" width="4.5" height="7" rx="1.6"/><rect x="16.5" y="14" width="4.5" height="7" rx="1.6"/></svg></span><b>Auriculares = música</b><span class="sw"></span><span class="ran"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg></span></li>
+            <li class="m" data-i="4"><span class="badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 2.5v5M15 2.5v5M6 7.5h12v3.5a6 6 0 0 1-12 0V7.5zM12 17v4.5"/></svg></span><b>Buenos días</b><span class="sw"></span><span class="ran"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg></span></li>
+            <li class="m" data-i="5"><span class="badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 16v-5a6 6 0 0 1 12 0v5l2 2H4z"/><path d="M10 20.5a2 2 0 0 0 4 0"/></svg></span><b>Hora de dormir</b><span class="sw"></span><span class="ran"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg></span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="rule-foot">
+        <div class="actions"><span class="btn btn-soon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v11m-5-5 5 5 5-5M5 19h14"/></svg>Muy pronto en Google Play</span><a class="btn btn-glass" href="#exemples">Ver ejemplos</a></div>
+        <ul class="facts"><li>Android 8 o posterior</li><li>Sin cuenta obligatoria</li><li>Gratis durante el lanzamiento</li></ul>
+      </div>
     </div>
   </div>
+</section>
+
+<section id="exemples" class="band">
+  <div class="wrap split-head">
+    <h2>58 macros listas para usar.</h2>
+    <p class="lead">Copia un ejemplo, ajústalo a tu gusto, y listo. Aquí tienes algunos.</p>
+  </div>
+  <div class="wrap"><ul class="chips" aria-label="Las 11 categorías de ejemplos"><li>Noche y sueño</li><li>Mañana</li><li>Trabajo y estudios</li><li>Auto y trayectos</li><li>Batería y carga</li><li>Música y sonido</li><li>Pantalla y video</li><li>Apps y redes sociales</li><li>Recordatorios y salud</li><li>Casa</li><li>Atajos</li></ul></div>
 </section>
 
 <section id="fonctionnement">
-  <div class="wrap split">
-    <div>
-      <div class="head reveal">
-        <p class="eyebrow">Cómo funciona</p>
-        <h2>Una regla, y listo.</h2>
-        <p class="lead">Cada macro cabe en una frase. La armas con tres bloques, sin programar nada.</p>
-      </div>
-      <div class="grid steps">
-        <article class="card reveal c-gold">
-          <span class="tag">1 · Cuando…</span>
-          <h3>Lo que pone en marcha la macro</h3>
-          <p>Una hora y unos días, el Wi-Fi, el Bluetooth, los auriculares, el cargador, el nivel de batería, la pantalla que se enciende, una app que se abre…</p>
-          <span class="pill">11 activadores</span>
-        </article>
-        <article class="card reveal c-violet">
-          <span class="tag">2 · Hacer…</span>
-          <h3>Las acciones, en orden</h3>
-          <p>Volumen, timbre, No molestar, brillo, linterna, música, alarma, temporizador, notificación, leer un texto en voz alta, abrir una app o un enlace, tocar un texto en la pantalla…</p>
-          <span class="pill">29 acciones para combinar</span>
-        </article>
-        <article class="card reveal c-cyan">
-          <span class="tag">3 · Solo si… (opcional)</span>
-          <h3>Condiciones, si las necesitas</h3>
-          <p>Una franja horaria, días de la semana, un nivel de batería, el teléfono cargando.</p>
-        </article>
-      </div>
-    </div>
-    <figure class="shot reveal"><div class="phone"><img src="../assets/shots/es/editeur.webp" alt="El editor de macros de Pépouze: el bloque Cuando… con un nivel de batería y, después, el bloque Hacer… con sus pasos" width="540" height="1200" loading="lazy"></div></figure>
-  </div>
-</section>
-
-<section id="exemples">
   <div class="wrap">
-    <div class="head reveal">
-      <p class="eyebrow">Ejemplos</p>
-      <h2>58 macros listas para usar.</h2>
-      <p class="lead">Copia un ejemplo, ajústalo a tu gusto, y listo. Aquí tienes algunos.</p>
+    <div class="sec-head">
+      <h2>Una regla, y listo.</h2>
+      <p class="lead">Cada macro cabe en una frase. La armas con tres bloques, sin programar nada.</p>
     </div>
-    <div class="grid g2">
-      <article class="card ex reveal c-blue"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 17v-4l2.2-5.2A2 2 0 0 1 8 6.5h8a2 2 0 0 1 1.8 1.3L20 13v4H4z"/><path d="M4 13h16"/><circle cx="8" cy="17" r="1.6"/><circle cx="16" cy="17" r="1.6"/></svg></span><div><h3>Modo auto</h3><p><span class="when">En cuanto se conecta el Bluetooth del auto,</span> sube el volumen y la música sigue sonando.</p></div></article>
-      <article class="card ex reveal c-violet"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 14.5A8 8 0 1 1 9.5 4a6.5 6.5 0 0 0 10.5 10.5z"/></svg></span><div><h3>Noche tranquila</h3><p><span class="when">A las 23:00,</span> se activa No molestar, el brillo baja al mínimo y la música se detiene.</p></div></article>
-      <article class="card ex reveal c-mint"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="7" y="5" width="10" height="16" rx="2.5"/><path d="M10 2.5h4M10 16h4"/></svg></span><div><h3>Ahorro de batería</h3><p><span class="when">Por debajo del 20 % de batería,</span> la pantalla baja el brillo y se apaga antes.</p></div></article>
-      <article class="card ex reveal c-pink"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 15v-3a8 8 0 0 1 16 0v3"/><rect x="3" y="14" width="4.5" height="7" rx="1.6"/><rect x="16.5" y="14" width="4.5" height="7" rx="1.6"/></svg></span><div><h3>Auriculares = música</h3><p><span class="when">Cuando conectas tus auriculares,</span> la música empieza a sonar a un volumen suave.</p></div></article>
-      <article class="card ex reveal c-orange"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 2.5v5M15 2.5v5M6 7.5h12v3.5a6 6 0 0 1-12 0V7.5zM12 17v4.5"/></svg></span><div><h3>Buenos días</h3><p><span class="when">Por la mañana, al desconectar el cargador,</span> el teléfono te dice la hora y la batería.</p></div></article>
-      <article class="card ex reveal c-gold"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 16v-5a6 6 0 0 1 12 0v5l2 2H4z"/><path d="M10 20.5a2 2 0 0 0 4 0"/></svg></span><div><h3>Hora de dormir</h3><p><span class="when">De domingo a jueves a las 22:30,</span> un recordatorio suave para dejar el teléfono, y la pantalla baja el brillo.</p></div></article>
+    <div class="editor">
+      <div class="step"><p class="step-k"><span class="badge num">1</span>Cuando</p><h3>Lo que pone en marcha la macro</h3><p>Una hora y unos días, el Wi-Fi, el Bluetooth, los auriculares, el cargador, el nivel de batería, la pantalla que se enciende, una app que se abre…</p><span class="chip">11 activadores</span></div>
+      <div class="step"><p class="step-k"><span class="badge num">2</span>Hacer</p><h3>Las acciones, en orden</h3><p>Volumen, timbre, No molestar, brillo, linterna, música, alarma, temporizador, notificación, leer un texto en voz alta, abrir una app o un enlace, tocar un texto en la pantalla…</p><span class="chip">29 acciones para combinar</span></div>
+      <div class="step"><p class="step-k"><span class="badge num">3</span>Solo si (opcional)</p><h3>Condiciones, si las necesitas</h3><p>Una franja horaria, días de la semana, un nivel de batería, el teléfono cargando.</p></div>
     </div>
-    <ul class="chips reveal" aria-label="Las 11 categorías de ejemplos">
-      <li>Noche y sueño</li><li>Mañana</li><li>Trabajo y estudios</li><li>Auto y trayectos</li><li>Batería y carga</li><li>Música y sonido</li><li>Pantalla y video</li><li>Apps y redes sociales</li><li>Recordatorios y salud</li><li>Casa</li><li>Atajos</li>
-    </ul>
   </div>
 </section>
 
 <section id="nova">
-  <div class="wrap split flip">
-    <figure class="shot reveal"><div class="phone"><img src="../assets/shots/es/ia-proposition.webp" alt="Pépouze preparó la macro Auriculares música a partir de una frase: Cuando… auriculares conectados, Hacer… volumen multimedia al 60 % y luego reproducir" width="540" height="1200" loading="lazy"></div></figure>
-    <div class="reveal">
-      <p class="eyebrow">Pépouze, tu asistente</p>
+  <div class="wrap split">
+    <div>
       <h2>Tú lo dices, Pépouze lo prepara.</h2>
       <p class="lead">Describe lo que quieres en una frase. Pépouze prepara la macro, tú la revisas y luego la guardas.</p>
-      <p class="bubble"><small>Tú</small>«Cuando conecte mis auriculares, pon la música al 60 %»</p>
       <ul class="ticks">
-        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg><span><b>Nada se activa sin tu permiso:</b> revisas cada macro antes de guardarla.</span></li>
-        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg><span><b>Pépouze funciona en el teléfono:</b> tu frase no se envía a ninguna parte.</span></li>
-        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg><span><b>Para pedidos más complejos,</b> Pépouze puede pasarle el relevo a Claude, con tu propia cuenta, sin clave.</span></li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg><span><span><b>Nada se activa sin tu permiso:</b> revisas cada macro antes de guardarla.</span></span></li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg><span><span><b>Pépouze funciona en el teléfono:</b> tu frase no se envía a ninguna parte.</span></span></li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg><span><span><b>Para pedidos más complejos,</b> Pépouze puede pasarle el relevo a Claude, con tu propia cuenta, sin clave.</span></span></li>
       </ul>
+    </div>
+    <div class="chat">
+      <p class="ask"><small>Tú</small>«Cuando conecte mis auriculares, pon la música al 60 %»</p>
+      <div class="reply"><p class="reply-head"><img src="../assets/icon-192.png" alt="" width="32" height="32"><b>Pépouze</b></p><p>Pépouze preparó la macro Auriculares música a partir de una frase: Cuando… auriculares conectados, Hacer… volumen multimedia al 60 % y luego reproducir</p></div>
     </div>
   </div>
 </section>
 
 <section id="partage">
   <div class="wrap">
-    <div class="head reveal">
-      <p class="eyebrow">Compartir y lanzar</p>
+    <div class="sec-head">
       <h2>Tus macros viajan.</h2>
       <p class="lead">Comparte ideas con la comunidad y lanza tus macros sin siquiera abrir la app.</p>
     </div>
-    <div class="grid g2">
-      <article class="card reveal c-cyan"><span class="num"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="m8.6 13.5 6.8 4M15.4 6.5l-6.8 4"/></svg></span><h3>Una comunidad</h3><p>Una biblioteca de macros compartidas por los usuarios. Copia la que te guste, publica las tuyas. <a href="communaute.html">Ver la comunidad</a></p></article>
-      <article class="card reveal c-violet"><span class="num"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><path d="M6.5 6.5h.01M17.5 6.5h.01M6.5 17.5h.01M14 14h.01M17.5 14h.01M21 14h.01M17.5 17.5h.01M14 21h.01M17.5 21h.01M21 21h.01M21 17.5h.01"/></svg></span><h3>Un código QR por macro</h3><p>Enséñaselo a un amigo, ponlo en un video: cualquier cámara lo abre y Pépouze lo importa.</p></article>
-      <article class="card reveal c-gold"><span class="num"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 9.5V4a2 2 0 0 0-4 0v10"/><path d="M14 10V9a2 2 0 0 0-4 0v1"/><path d="M18 11v-1a2 2 0 0 0-4 0"/><path d="M18 11a2 2 0 1 1 4 0v3a8 8 0 0 1-8 8h-2c-2.8 0-4.5-.86-6-2.34l-3.6-3.6a2 2 0 0 1 2.83-2.82L7 15"/></svg></span><h3>Con un toque</h3><p>Un widget en la pantalla de inicio, un mosaico en los ajustes rápidos o un acceso directo: la macro se lanza al instante.</p></article>
-      <article class="card reveal c-mint"><span class="num"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.7 3.8 5.7 3.8 9s-1.3 6.3-3.8 9c-2.5-2.7-3.8-5.7-3.8-9S9.5 5.7 12 3z"/></svg></span><h3>En tu idioma</h3><p>Pépouze habla 13 idiomas y entiende tus peticiones directamente en el teléfono.</p></article>
+    <div class="defs">
+      <div class="def"><span class="badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="m8.6 13.5 6.8 4M15.4 6.5l-6.8 4"/></svg></span><h3>Una comunidad</h3><p>Una biblioteca de macros compartidas por los usuarios. Copia la que te guste, publica las tuyas. <a href="communaute.html">Ver la comunidad</a></p></div>
+      <div class="def"><span class="badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><path d="M6.5 6.5h.01M17.5 6.5h.01M6.5 17.5h.01M14 14h.01M17.5 14h.01M21 14h.01M17.5 17.5h.01M14 21h.01M17.5 21h.01M21 21h.01M21 17.5h.01"/></svg></span><h3>Un código QR por macro</h3><p>Enséñaselo a un amigo, ponlo en un video: cualquier cámara lo abre y Pépouze lo importa.</p></div>
+      <div class="def"><span class="badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 9.5V4a2 2 0 0 0-4 0v10"/><path d="M14 10V9a2 2 0 0 0-4 0v1"/><path d="M18 11v-1a2 2 0 0 0-4 0"/><path d="M18 11a2 2 0 1 1 4 0v3a8 8 0 0 1-8 8h-2c-2.8 0-4.5-.86-6-2.34l-3.6-3.6a2 2 0 0 1 2.83-2.82L7 15"/></svg></span><h3>Con un toque</h3><p>Un widget en la pantalla de inicio, un mosaico en los ajustes rápidos o un acceso directo: la macro se lanza al instante.</p></div>
+      <div class="def"><span class="badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.7 3.8 5.7 3.8 9s-1.3 6.3-3.8 9c-2.5-2.7-3.8-5.7-3.8-9S9.5 5.7 12 3z"/></svg></span><h3>En tu idioma</h3><p>Pépouze habla 13 idiomas y entiende tus peticiones directamente en el teléfono.</p></div>
     </div>
   </div>
 </section>
 
 <section id="controle">
   <div class="wrap split">
+    <figure class="history">
+      <ol aria-label="El historial de Pépouze: Modo auto, Auriculares = música, Noche tranquila y Ahorro de batería, con la hora y lo que activó cada una">
+          <li><span class="badge solid"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg></span><span><b>Modo auto</b><small>En cuanto se conecta el Bluetooth del auto</small></span><time>15:13</time></li>
+          <li><span class="badge solid"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg></span><span><b>Auriculares = música</b><small>Cuando conectas tus auriculares</small></span><time>14:27</time></li>
+          <li><span class="badge solid"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg></span><span><b>Noche tranquila</b><small>A las 23:00</small></span><time>23:00</time></li>
+          <li><span class="badge solid"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg></span><span><b>Ahorro de batería</b><small>Por debajo del 20 % de batería</small></span><time>12:17</time></li>
+      </ol>
+    </figure>
     <div>
-      <div class="head reveal">
-        <p class="eyebrow">Tú tienes el control</p>
-        <h2>Todo se ve, todo se explica.</h2>
-      </div>
-      <div class="grid g2">
-        <article class="card reveal c-mint"><span class="num"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3.5 12a8.5 8.5 0 1 0 2.6-6.1L3.5 8.5"/><path d="M3.5 3.5v5h5"/><path d="M12 7.5V12l3 2"/></svg></span><h3>Historial</h3><p>Cada ejecución queda registrada, haya salido bien o no, junto con lo que la activó.</p></article>
-        <article class="card reveal c-gold"><span class="num"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3 5 6v6c0 4.4 3 7.6 7 9 4-1.4 7-4.6 7-9V6l-7-3z"/><path d="m9 12 2 2 4-4"/></svg></span><h3>Permisos en el momento justo</h3><p>Un permiso solo se pide cuando una macro lo necesita, con su explicación.</p></article>
-        <article class="card reveal c-blue"><span class="num"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 18.5h10a4 4 0 0 0 .6-7.95A6 6 0 0 0 6.1 10 4.3 4.3 0 0 0 7 18.5z"/></svg></span><h3>Copia de seguridad</h3><p>En Google Drive o en el teléfono, sin cuenta. O en línea, con una cuenta.</p></article>
-        <article class="card reveal c-pink"><span class="num"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="11" width="14" height="10" rx="2.5"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg></span><h3>Tus datos se quedan contigo</h3><p>Tus macros están en tu teléfono. Sin medición de audiencia, sin venta de datos.</p></article>
+      <h2>Todo se ve, todo se explica.</h2>
+      <div class="defs one">
+        <div class="def"><span class="badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3.5 12a8.5 8.5 0 1 0 2.6-6.1L3.5 8.5"/><path d="M3.5 3.5v5h5"/><path d="M12 7.5V12l3 2"/></svg></span><h3>Historial</h3><p>Cada ejecución queda registrada, haya salido bien o no, junto con lo que la activó.</p></div>
+        <div class="def"><span class="badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3 5 6v6c0 4.4 3 7.6 7 9 4-1.4 7-4.6 7-9V6l-7-3z"/><path d="m9 12 2 2 4-4"/></svg></span><h3>Permisos en el momento justo</h3><p>Un permiso solo se pide cuando una macro lo necesita, con su explicación.</p></div>
+        <div class="def"><span class="badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 18.5h10a4 4 0 0 0 .6-7.95A6 6 0 0 0 6.1 10 4.3 4.3 0 0 0 7 18.5z"/></svg></span><h3>Copia de seguridad</h3><p>En Google Drive o en el teléfono, sin cuenta. O en línea, con una cuenta.</p></div>
+        <div class="def"><span class="badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="11" width="14" height="10" rx="2.5"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg></span><h3>Tus datos se quedan contigo</h3><p>Tus macros están en tu teléfono. Sin medición de audiencia, sin venta de datos.</p></div>
       </div>
     </div>
-    <figure class="shot reveal"><div class="phone"><img src="../assets/shots/es/historique.webp" alt="El historial de Pépouze: Modo auto, Auriculares = música, Noche tranquila y Ahorro de batería, con la hora y lo que activó cada una" width="540" height="1200" loading="lazy"></div></figure>
   </div>
 </section>
 
 <section id="tarifs">
-  <div class="wrap">
-    <div class="head reveal">
-      <p class="eyebrow">Precio</p>
+  <div class="wrap split">
+    <div>
       <h2>Gratis durante el lanzamiento.</h2>
       <p class="lead">Durante la fase de lanzamiento, Pépouze es totalmente gratis y sin anuncios. Después llegará una versión de pago: te avisaremos antes, y tus macros siguen siendo tuyas.</p>
     </div>
-    <div class="grid price-one">
-      <article class="card price reveal c-blue">
-        <span class="tag">Fase de lanzamiento</span>
-        <p class="amount">0 €</p>
-        <ul>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg><span>Todas las funciones y los 58 ejemplos</span></li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg><span>Todas las macros que quieras</span></li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg><span>Sin anuncios</span></li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg><span>Sin cuenta obligatoria</span></li>
-        </ul>
-      </article>
+    <div class="price">
+      <span class="chip on">Fase de lanzamiento</span>
+      <p class="amount">0 €</p>
+      <ul><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg><span>Todas las funciones y los 58 ejemplos</span></li><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg><span>Todas las macros que quieras</span></li><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg><span>Sin anuncios</span></li><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg><span>Sin cuenta obligatoria</span></li></ul>
     </div>
   </div>
 </section>
 
 <section id="questions">
   <div class="wrap">
-    <div class="head reveal">
-      <p class="eyebrow">Preguntas</p>
-      <h2>Lo que más nos preguntan.</h2>
-    </div>
+    <div class="sec-head"><h2>Lo que más nos preguntan.</h2></div>
     <div class="faq">
       <details>
-        <summary>¿Por qué Pépouze usa el servicio de accesibilidad?</summary>
-        <div>
-          <p>Solo para lo que tú agregas a tus macros: tocar un texto en la pantalla, pulsar Atrás o Inicio, bloquear la pantalla, hacer una captura de pantalla, saber qué app se abre.</p>
-          <p>El texto de la pantalla solo se lee para encontrar el que hay que tocar, y nada sale del teléfono. Pépouze actúa únicamente según las reglas que tú escribiste. El servicio solo se activa con tu permiso, después de una explicación específica, y puedes desactivarlo cuando quieras.</p>
-        </div>
-      </details>
+<summary>¿Por qué Pépouze usa el servicio de accesibilidad?</summary>
+<div>
+<p>Solo para lo que tú agregas a tus macros: tocar un texto en la pantalla, pulsar Atrás o Inicio, bloquear la pantalla, hacer una captura de pantalla, saber qué app se abre.</p>
+<p>El texto de la pantalla solo se lee para encontrar el que hay que tocar, y nada sale del teléfono. Pépouze actúa únicamente según las reglas que tú escribiste. El servicio solo se activa con tu permiso, después de una explicación específica, y puedes desactivarlo cuando quieras.</p>
+</div>
+</details>
       <details>
-        <summary>¿Hay que crear una cuenta?</summary>
-        <div><p>No. La cuenta solo sirve para guardar tus macros en línea. También puedes guardarlas en un archivo, en Google Drive o en el teléfono, sin ninguna cuenta.</p></div>
-      </details>
+<summary>¿Hay que crear una cuenta?</summary>
+<div><p>No. La cuenta solo sirve para guardar tus macros en línea. También puedes guardarlas en un archivo, en Google Drive o en el teléfono, sin ninguna cuenta.</p></div>
+</details>
       <details>
-        <summary>¿Mis macros funcionan con la pantalla apagada?</summary>
-        <div><p>Sí, la mayoría: Pépouze escucha los eventos en segundo plano. Para que Android no la suspenda, elige «Batería: sin restricciones» en la página de la app, en los ajustes de Android. Las acciones que tocan la pantalla necesitan el teléfono desbloqueado.</p></div>
-      </details>
+<summary>¿Mis macros funcionan con la pantalla apagada?</summary>
+<div><p>Sí, la mayoría: Pépouze escucha los eventos en segundo plano. Para que Android no la suspenda, elige «Batería: sin restricciones» en la página de la app, en los ajustes de Android. Las acciones que tocan la pantalla necesitan el teléfono desbloqueado.</p></div>
+</details>
       <details>
-        <summary>¿Pépouze envía SMS por mí?</summary>
-        <div><p>No. La acción «Preparar un SMS» abre tu app de mensajes con el número y el texto listos: eres tú quien toca Enviar.</p></div>
-      </details>
+<summary>¿Pépouze envía SMS por mí?</summary>
+<div><p>No. La acción «Preparar un SMS» abre tu app de mensajes con el número y el texto listos: eres tú quien toca Enviar.</p></div>
+</details>
       <details>
-        <summary>¿Cómo elimino mi cuenta y mis datos?</summary>
-        <div><p>En la app: Mi cuenta → Eliminar mi cuenta. Sin la app, sigue <a href="suppression-compte.html">la página de eliminación de la cuenta</a>.</p></div>
-      </details>
+<summary>¿Cómo elimino mi cuenta y mis datos?</summary>
+<div><p>En la app: Mi cuenta → Eliminar mi cuenta. Sin la app, sigue <a href="suppression-compte.html">la página de eliminación de la cuenta</a>.</p></div>
+</details>
     </div>
   </div>
 </section>
 
 <section class="end">
   <div class="wrap">
-    <div class="card reveal">
-      <img src="../assets/icon-192.png" alt="" width="88" height="88">
-      <h2>Programa todo. <span class="grad">Incluso tus buenos propósitos.</span></h2>
-      <p class="lead" style="margin: 0 auto">Gratis durante el lanzamiento, en Android.</p>
-      <p class="tester">Pépouze llega muy pronto. Pruébala antes que nadie: escríbenos y te enviamos la invitación.</p><div class="actions"><a class="btn btn-cta" href="mailto:pepouze.apk@gmail.com?subject=Quiero%20probar%20P%C3%A9pouze"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg>Ser tester</a><span class="btn btn-soon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v11m-5-5 5 5 5-5M5 19h14"/></svg>Muy pronto en Google Play</span></div>
-    </div>
+    <img src="../assets/icon-192.png" alt="" width="88" height="88">
+    <h2>Programa todo. <span class="hl">Incluso tus buenos propósitos.</span></h2>
+    <p class="lead">Gratis durante el lanzamiento, en Android.</p>
+    <p class="tester">Pépouze llega muy pronto. Pruébala antes que nadie: escríbenos y te enviamos la invitación.</p><div class="actions"><a class="btn btn-cta" href="mailto:pepouze.apk@gmail.com?subject=Quiero%20probar%20P%C3%A9pouze"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg>Ser tester</a><span class="btn btn-soon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v11m-5-5 5 5 5-5M5 19h14"/></svg>Muy pronto en Google Play</span></div>
   </div>
 </section>
-<script src="../assets/motion.js?v=181769bc" defer></script>
+<script src="../assets/motion.js?v=9700f3e0" defer></script>
 </main>
 
 <footer>
